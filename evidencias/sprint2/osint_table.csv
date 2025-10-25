@@ -1,1 +1,9 @@
 dominio,subdominio,email,endpoint_api,pdf_file,pdf_author,pdf_version,source,timestamp,evidence_file
+puntodepartidauc.com,www.puntodepartidauc.com,N/A,https://www.puntodepartidauc.com/login, N/A,N/A,N/A,TheHarvester (urlscan, google),2025-10-25T10:00:00Z,/mnt/data/theharvester_google.txt
+"app.triphasikperformance.com,app.triphasikperformance.com,N/A,https://app.triphasikperformance.com/login,Triphasik_amjorh.pdf,Unknown,1.0,ZAP / theHarvester / theharvester_urlscan,2025-10-25T10:00:00Z,/mnt/data/Triphasik_amjorh.pdf;/mnt/data/2025-10-25-ZAP-Report-app.triphasikperformance.com.html"
+"raymifest.com,www.raymifest.com,N/A,https://raymifest.com/api/auth,testhtml5.vulnweb.com (N/A),N/A,N/A,WhatWeb/Nikto,2025-10-25T10:00:00Z,/mnt/data/whatweb.txt;/mnt/data/nikto.txt"
+"virtuolabs.dev,www.virtuolabs.dev,N/A,https://www.virtuolabs.dev/api/login, N/A,N/A,N/A,TheHarvester/Nmap/Nikto,2025-10-25T10:00:00Z,/mnt/data/nmap_full_tcp_lab.txt;/mnt/data/nikto.txt"
+"triphasikperformance.com,app.triphasikperformance.com,N/A,https://app.triphasikperformance.com/api/auth,Triphasik_amjorh.pdf,Unknown,1.0,TheHarvester/ZAP,2025-10-25T10:00:00Z,/mnt/data/theharvester_urlscan.txt;/mnt/data/2025-10-25-ZAP-Report-app.triphasikperformance.com.html"
+"puntodepartidauc.com,static.puntodepartidauc.com,N/A,https://www.puntodepartidauc.com/api, N/A,N/A,N/A,WhatWeb/Nmap,2025-10-25T10:00:00Z,/mnt/data/whatweb.txt;/mnt/data/nmap_topports.txt"
+"raymifest.com,api.raymifest.com,N/A,https://raymifest.com/api/v1/events, N/A,N/A,N/A,Nikto/WhatWeb,2025-10-25T10:00:00Z,/mnt/data/nikto.txt;/mnt/data/whatweb.txt"
+"virtuolabs.dev,admin.virtuolabs.dev,N/A,https://www.virtuolabs.dev/admin, N/A,N/A,N/A,Nmap/WhatWeb,2025-10-25T10:00:00Z,/mnt/data/nmap_sV_scripts.txt;/mnt/data/whatweb.txt"

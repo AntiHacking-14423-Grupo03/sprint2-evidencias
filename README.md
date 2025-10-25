@@ -17,7 +17,9 @@
 - [Sprint 2 – Evaluación de Seguridad Web (Laboratorio)](#sprint-2--evaluación-de-seguridad-web-laboratorio)
   - [Índice](#índice)
   - [0) Preparar entorno](#0-preparar-entorno)
+  - [](#)
   - [1) Evidencia inicial](#1-evidencia-inicial)
+  - [](#-1)
   - [2) Estructura de targets](#2-estructura-de-targets)
   - [3) Reconocimiento Pasivo (OSINT)](#3-reconocimiento-pasivo-osint)
   - [4) Escaneo de red (Nmap) — perfil conservador](#4-escaneo-de-red-nmap--perfil-conservador)
@@ -50,6 +52,7 @@ sudo apt install -y nmap whatweb gobuster nikto theharvester ffuf dos2unix zip j
 
 Archivo de evidencia básico: `~/evidencias/prep_evidence.txt` (hostname, ip, kernel).
 
+![Captura 1 — Entorno de trabajo](./evidencias/Screenshot/captura1.png)
 ---
 
 ## 1) Evidencia inicial
@@ -65,7 +68,7 @@ sed -n '1,200p' ~/evidencias/prep_evidence.txt
 ```
 
 Capturas: `~/evidencias/screenshots/` (guarda PNGs del entorno, terminal, ZAP, Nessus, etc.)
-
+![Captura 2 — Entorno de trabajo](./evidencias/Screenshot/captura2.png)
 ---
 
 ## 2) Estructura de targets
