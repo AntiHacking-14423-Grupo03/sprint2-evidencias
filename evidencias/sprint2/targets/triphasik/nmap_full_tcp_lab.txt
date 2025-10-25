@@ -1,0 +1,32 @@
+# Nmap 7.95 scan initiated Sat Oct 25 02:07:21 2025 as: /usr/lib/nmap/nmap -Pn -sS -p- -T4 -oN /root/evidencias/sprint2/targets/triphasik/nmap_full_tcp_lab.txt app.triphasikperformance.com
+Warning: 91.98.70.94 giving up on port because retransmission cap hit (6).
+Nmap scan report for app.triphasikperformance.com (91.98.70.94)
+Host is up (0.19s latency).
+rDNS record for 91.98.70.94: static.94.70.98.91.clients.your-server.de
+Not shown: 65512 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+120/tcp   filtered cfdptkt
+443/tcp   open     https
+3306/tcp  open     mysql
+5432/tcp  open     postgresql
+6582/tcp  filtered parsec-game
+11880/tcp filtered unknown
+12457/tcp filtered unknown
+24148/tcp filtered unknown
+26852/tcp filtered unknown
+29987/tcp filtered unknown
+32398/tcp filtered unknown
+35282/tcp filtered unknown
+40357/tcp filtered unknown
+44522/tcp filtered unknown
+46126/tcp filtered unknown
+60148/tcp filtered unknown
+60713/tcp filtered unknown
+61093/tcp filtered unknown
+61816/tcp filtered unknown
+64429/tcp filtered unknown
+65521/tcp filtered unknown
+
+# Nmap done at Sat Oct 25 03:42:14 2025 -- 1 IP address (1 host up) scanned in 5692.87 seconds

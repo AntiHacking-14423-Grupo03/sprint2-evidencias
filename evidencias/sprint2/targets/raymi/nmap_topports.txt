@@ -1,0 +1,15 @@
+# Nmap 7.95 scan initiated Sat Oct 25 04:53:37 2025 as: /usr/lib/nmap/nmap -Pn -sS -p 80,443,22,21,25,53,3306 -T2 -oN /root/evidencias/sprint2/targets/raymi/nmap_topports.txt raymifest.com
+Nmap scan report for raymifest.com (23.239.27.53)
+Host is up (0.096s latency).
+rDNS record for 23.239.27.53: paul.hostservercloud.com
+
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+3306/tcp open  mysql
+
+# Nmap done at Sat Oct 25 04:53:40 2025 -- 1 IP address (1 host up) scanned in 3.23 seconds

@@ -1,0 +1,19 @@
+# Nmap 7.95 scan initiated Sat Oct 25 02:06:37 2025 as: /usr/lib/nmap/nmap -Pn -sV -sC -p 80,443 -T2 -oN /root/evidencias/sprint2/targets/triphasik/nmap_sV_scripts.txt app.triphasikperformance.com
+Nmap scan report for app.triphasikperformance.com (91.98.70.94)
+Host is up (0.18s latency).
+rDNS record for 91.98.70.94: static.94.70.98.91.clients.your-server.de
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Caddy httpd
+|_http-server-header: Caddy
+|_http-title: Site doesn't have a title.
+443/tcp open  ssl/http Caddy httpd
+|_http-title: Triphasik Performance
+|_http-server-header: Caddy
+| ssl-cert: Subject: commonName=app.triphasikperformance.com
+| Subject Alternative Name: DNS:app.triphasikperformance.com
+| Not valid before: 2025-10-21T23:40:35
+|_Not valid after:  2026-01-19T23:40:34
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 25 02:07:21 2025 -- 1 IP address (1 host up) scanned in 44.12 seconds

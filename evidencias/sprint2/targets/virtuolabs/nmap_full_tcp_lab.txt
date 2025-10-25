@@ -1,0 +1,37 @@
+# Nmap 7.95 scan initiated Sat Oct 25 02:22:59 2025 as: /usr/lib/nmap/nmap -Pn -sS -p- -T4 -oN /root/evidencias/sprint2/targets/virtuolabs/nmap_full_tcp_lab.txt virtuolabs.dev
+Warning: 91.98.70.94 giving up on port because retransmission cap hit (6).
+Nmap scan report for virtuolabs.dev (91.98.70.94)
+Host is up (0.19s latency).
+rDNS record for 91.98.70.94: static.94.70.98.91.clients.your-server.de
+Not shown: 65507 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+443/tcp   open     https
+3306/tcp  open     mysql
+5432/tcp  open     postgresql
+5708/tcp  filtered unknown
+14447/tcp filtered unknown
+18426/tcp filtered unknown
+20468/tcp filtered unknown
+22466/tcp filtered unknown
+25044/tcp filtered unknown
+25609/tcp filtered unknown
+26283/tcp filtered unknown
+27420/tcp filtered unknown
+29384/tcp filtered unknown
+32940/tcp filtered unknown
+33130/tcp filtered unknown
+33219/tcp filtered unknown
+33956/tcp filtered unknown
+34016/tcp filtered unknown
+35484/tcp filtered unknown
+35770/tcp filtered unknown
+43004/tcp filtered unknown
+52873/tcp filtered unknown
+53322/tcp filtered unknown
+54171/tcp filtered unknown
+54478/tcp filtered unknown
+55763/tcp filtered unknown
+
+# Nmap done at Sat Oct 25 03:57:46 2025 -- 1 IP address (1 host up) scanned in 5687.43 seconds

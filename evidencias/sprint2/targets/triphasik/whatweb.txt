@@ -1,0 +1,40 @@
+WhatWeb report for [1m[34mhttps://app.triphasikperformance.com[0m
+Status    : 200 OK
+Title     : [1m[33mTriphasik Performance[0m
+IP        : 91.98.70.94
+Country   : [1m[31mIRAN (ISLAMIC REPUBLIC OF), IR[0m
+
+Summary   : [1mHTML5[0m, [1mScript[0m[[0m[22mmodule[0m], [1mUncommonHeaders[0m[[0m[22malt-svc[0m]
+
+Detected Plugins:
+[ [1mHTML5[0m ]
+	HTML version 5, detected by the doctype declaration 
+
+
+[ [1mScript[0m ]
+	This plugin detects instances of script HTML elements and 
+	returns the script language/type. 
+
+	String       : [1m[36mmodule[0m
+
+[ [1mUncommonHeaders[0m ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : [1m[36malt-svc[0m (from headers)
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Alt-Svc: h3=":443"; ma=2592000
+	Content-Encoding: gzip
+	Content-Type: text/html
+	Date: Sat, 25 Oct 2025 08:38:19 GMT
+	Etag: "68fa6cd7-28f"
+	Last-Modified: Thu, 23 Oct 2025 17:58:47 GMT
+	Vary: Accept-Encoding
+	Content-Length: 360
+	Connection: close
+	

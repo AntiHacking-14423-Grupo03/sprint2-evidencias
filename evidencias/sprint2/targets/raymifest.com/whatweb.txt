@@ -1,0 +1,53 @@
+WhatWeb report for [1m[34mhttps://raymifest.com[0m
+Status    : 403 Forbidden
+Title     : [1m[33m,403 Forbidden[0m
+IP        : 23.239.27.53
+Country   : [1m[31mUNITED STATES, US[0m
+
+Summary   : [1mHTML5[0m, [1mUncommonHeaders[0m[[0m[22mx-content-type-options,referrer-policy,alt-svc[0m], [1mX-Frame-Options[0m[[0m[22mDENY[0m], [1mX-XSS-Protection[0m[[0m[22m1; mode=block[0m]
+
+Detected Plugins:
+[ [1mHTML5[0m ]
+	HTML version 5, detected by the doctype declaration 
+
+
+[ [1mUncommonHeaders[0m ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : [1m[36mx-content-type-options,referrer-policy,alt-svc[0m (from headers)
+
+[ [1mX-Frame-Options[0m ]
+	This plugin retrieves the X-Frame-Options value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : [1m[36mDENY[0m
+
+[ [1mX-XSS-Protection[0m ]
+	This plugin retrieves the X-XSS-Protection value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : [1m[36m1; mode=block[0m
+
+HTTP Headers:
+	HTTP/1.1 403 Forbidden
+	Connection: close
+	cache-control: private, no-cache, no-store, must-revalidate, max-age=0
+	pragma: no-cache
+	content-type: text/html
+	content-length: 787
+	date: Sat, 25 Oct 2025 08:40:36 GMT
+	vary: User-Agent
+	x-content-type-options: nosniff
+	x-frame-options: DENY
+	x-xss-protection: 1; mode=block
+	referrer-policy: strict-origin-when-cross-origin
+	alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+	

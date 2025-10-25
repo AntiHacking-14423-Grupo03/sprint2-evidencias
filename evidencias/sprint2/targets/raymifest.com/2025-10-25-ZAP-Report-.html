@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="2025-10-25-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2025-10-25-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2025-10-25-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2025-10-25-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Sat 25 Oct 2025, at 05:07:55</span>
+		</p>
+		<p>ZAP Version: 2.16.1</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(2)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://raymifest.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(60.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40.0%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">https://raymifest.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>9</span><br> <span
+								class="additional-info-percentages">(180.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Modern Web Application</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(80.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://raymifest.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://raymifest.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET https://raymifest.com/ HTTP/1.1
+host: raymifest.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (640 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+cache-control: public, max-age=86400
+expires: Sun, 26 Oct 2025 10:07:07 GMT
+content-type: text/html
+last-modified: Sat, 16 Aug 2025 04:04:34 GMT
+accept-ranges: bytes
+content-length: 3488
+date: Sat, 25 Oct 2025 10:07:07 GMT
+vary: User-Agent
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3488 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;es-PE&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    
+    &lt;!-- Favicon --&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/svg+xml&quot; href=&quot;./favicon.svg&quot; /&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;./favicon.svg&quot; /&gt;
+    
+    &lt;!-- Web App Manifest --&gt;
+    &lt;link rel=&quot;manifest&quot; href=&quot;./manifest.json&quot; /&gt;
+    
+    &lt;!-- Viewport --&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    
+    &lt;!-- SEO Meta Tags --&gt;
+    &lt;title&gt;Raymi - Cremas de Aceituna | Productos Artesanales Peruanos&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Descubre las cremas naturales de aceituna Raymi. Productos artesanales peruanos elaborados con aceitunas de la más alta calidad. Sabores únicos que honran la tradición culinaria del Perú.&quot; /&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;cremas de aceituna, productos peruanos, artesanal, aceitunas, crema verde, crema morada, Raymi, comida peruana, natural, tradicional&quot; /&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Raymi&quot; /&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;index, follow&quot; /&gt;
+    &lt;meta name=&quot;language&quot; content=&quot;Spanish&quot; /&gt;
+    &lt;meta name=&quot;geo.region&quot; content=&quot;PE&quot; /&gt;
+    &lt;meta name=&quot;geo.country&quot; content=&quot;Perú&quot; /&gt;
+    
+    &lt;!-- Open Graph / Facebook --&gt;
+    &lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+    &lt;meta property=&quot;og:title&quot; content=&quot;Raymi - Cremas Naturales de Aceituna | Productos Artesanales Peruanos&quot; /&gt;
+    &lt;meta property=&quot;og:description&quot; content=&quot;Descubre las cremas naturales de aceituna Raymi. Productos artesanales peruanos elaborados con aceitunas de la más alta calidad.&quot; /&gt;
+    &lt;meta property=&quot;og:image&quot; content=&quot;./favicon.svg&quot; /&gt;
+    &lt;meta property=&quot;og:url&quot; content=&quot;https://raymi.pe&quot; /&gt;
+    &lt;meta property=&quot;og:site_name&quot; content=&quot;Raymi&quot; /&gt;
+    &lt;meta property=&quot;og:locale&quot; content=&quot;es_PE&quot; /&gt;
+    
+    &lt;!-- Twitter --&gt;
+    &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
+    &lt;meta name=&quot;twitter:title&quot; content=&quot;Raymi - Cremas Naturales de Aceituna&quot; /&gt;
+    &lt;meta name=&quot;twitter:description&quot; content=&quot;Productos artesanales peruanos elaborados con aceitunas de la más alta calidad.&quot; /&gt;
+    &lt;meta name=&quot;twitter:image&quot; content=&quot;./favicon.svg&quot; /&gt;
+    
+    &lt;!-- Schema.org JSON-LD --&gt;
+    &lt;script type=&quot;application/ld+json&quot;&gt;
+    {
+      &quot;@context&quot;: &quot;https://schema.org&quot;,
+      &quot;@type&quot;: &quot;Organization&quot;,
+      &quot;name&quot;: &quot;Raymi&quot;,
+      &quot;description&quot;: &quot;Cremas naturales de aceituna artesanales peruanas&quot;,
+      &quot;url&quot;: &quot;https://raymi.pe&quot;,
+      &quot;logo&quot;: &quot;/favicon.svg&quot;,
+      &quot;contactPoint&quot;: {
+        &quot;@type&quot;: &quot;ContactPoint&quot;,
+        &quot;contactType&quot;: &quot;customer service&quot;,
+        &quot;availableLanguage&quot;: [&quot;Spanish&quot;]
+      },
+      &quot;address&quot;: {
+        &quot;@type&quot;: &quot;PostalAddress&quot;,
+        &quot;addressCountry&quot;: &quot;PE&quot;
+      },
+      &quot;sameAs&quot;: [
+        &quot;https://www.instagram.com/raymi.pe&quot;,
+        &quot;https://www.facebook.com/raymi.pe&quot;
+      ]
+    }
+    &lt;/script&gt;
+    
+    &lt;!-- Preconnect to external domains --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+    
+    &lt;!-- Theme color --&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#6B8E23&quot; /&gt;
+    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#6B8E23&quot; /&gt;
+    &lt;script type=&quot;module&quot; crossorigin src=&quot;./assets/index-D7k8-fAa.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; crossorigin href=&quot;./assets/index-BbpbaNVO.css&quot;&gt;
+  &lt;link rel=&quot;manifest&quot; href=&quot;./manifest.webmanifest&quot;&gt;&lt;script id=&quot;vite-plugin-pwa:register-sw&quot; src=&quot;./registerSW.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://raymifest.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://raymifest.com/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/319.html">CWE-319</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (238 bytes)</summary>
+				
+				<pre><code>GET https://raymifest.com/robots.txt HTTP/1.1
+host: raymifest.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (384 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+content-type: text/plain
+last-modified: Sat, 16 Aug 2025 04:04:21 GMT
+accept-ranges: bytes
+content-length: 102
+date: Sat, 25 Oct 2025 10:07:07 GMT
+vary: User-Agent
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (102 bytes)</summary>
+				
+				<pre><code>User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://raymi.pe/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://raymifest.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://raymifest.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET https://raymifest.com/ HTTP/1.1
+host: raymifest.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (640 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+cache-control: public, max-age=86400
+expires: Sun, 26 Oct 2025 10:07:07 GMT
+content-type: text/html
+last-modified: Sat, 16 Aug 2025 04:04:34 GMT
+accept-ranges: bytes
+content-length: 3488
+date: Sat, 25 Oct 2025 10:07:07 GMT
+vary: User-Agent
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3488 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;es-PE&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    
+    &lt;!-- Favicon --&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/svg+xml&quot; href=&quot;./favicon.svg&quot; /&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;./favicon.svg&quot; /&gt;
+    
+    &lt;!-- Web App Manifest --&gt;
+    &lt;link rel=&quot;manifest&quot; href=&quot;./manifest.json&quot; /&gt;
+    
+    &lt;!-- Viewport --&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    
+    &lt;!-- SEO Meta Tags --&gt;
+    &lt;title&gt;Raymi - Cremas de Aceituna | Productos Artesanales Peruanos&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Descubre las cremas naturales de aceituna Raymi. Productos artesanales peruanos elaborados con aceitunas de la más alta calidad. Sabores únicos que honran la tradición culinaria del Perú.&quot; /&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;cremas de aceituna, productos peruanos, artesanal, aceitunas, crema verde, crema morada, Raymi, comida peruana, natural, tradicional&quot; /&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Raymi&quot; /&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;index, follow&quot; /&gt;
+    &lt;meta name=&quot;language&quot; content=&quot;Spanish&quot; /&gt;
+    &lt;meta name=&quot;geo.region&quot; content=&quot;PE&quot; /&gt;
+    &lt;meta name=&quot;geo.country&quot; content=&quot;Perú&quot; /&gt;
+    
+    &lt;!-- Open Graph / Facebook --&gt;
+    &lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+    &lt;meta property=&quot;og:title&quot; content=&quot;Raymi - Cremas Naturales de Aceituna | Productos Artesanales Peruanos&quot; /&gt;
+    &lt;meta property=&quot;og:description&quot; content=&quot;Descubre las cremas naturales de aceituna Raymi. Productos artesanales peruanos elaborados con aceitunas de la más alta calidad.&quot; /&gt;
+    &lt;meta property=&quot;og:image&quot; content=&quot;./favicon.svg&quot; /&gt;
+    &lt;meta property=&quot;og:url&quot; content=&quot;https://raymi.pe&quot; /&gt;
+    &lt;meta property=&quot;og:site_name&quot; content=&quot;Raymi&quot; /&gt;
+    &lt;meta property=&quot;og:locale&quot; content=&quot;es_PE&quot; /&gt;
+    
+    &lt;!-- Twitter --&gt;
+    &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
+    &lt;meta name=&quot;twitter:title&quot; content=&quot;Raymi - Cremas Naturales de Aceituna&quot; /&gt;
+    &lt;meta name=&quot;twitter:description&quot; content=&quot;Productos artesanales peruanos elaborados con aceitunas de la más alta calidad.&quot; /&gt;
+    &lt;meta name=&quot;twitter:image&quot; content=&quot;./favicon.svg&quot; /&gt;
+    
+    &lt;!-- Schema.org JSON-LD --&gt;
+    &lt;script type=&quot;application/ld+json&quot;&gt;
+    {
+      &quot;@context&quot;: &quot;https://schema.org&quot;,
+      &quot;@type&quot;: &quot;Organization&quot;,
+      &quot;name&quot;: &quot;Raymi&quot;,
+      &quot;description&quot;: &quot;Cremas naturales de aceituna artesanales peruanas&quot;,
+      &quot;url&quot;: &quot;https://raymi.pe&quot;,
+      &quot;logo&quot;: &quot;/favicon.svg&quot;,
+      &quot;contactPoint&quot;: {
+        &quot;@type&quot;: &quot;ContactPoint&quot;,
+        &quot;contactType&quot;: &quot;customer service&quot;,
+        &quot;availableLanguage&quot;: [&quot;Spanish&quot;]
+      },
+      &quot;address&quot;: {
+        &quot;@type&quot;: &quot;PostalAddress&quot;,
+        &quot;addressCountry&quot;: &quot;PE&quot;
+      },
+      &quot;sameAs&quot;: [
+        &quot;https://www.instagram.com/raymi.pe&quot;,
+        &quot;https://www.facebook.com/raymi.pe&quot;
+      ]
+    }
+    &lt;/script&gt;
+    
+    &lt;!-- Preconnect to external domains --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+    
+    &lt;!-- Theme color --&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#6B8E23&quot; /&gt;
+    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#6B8E23&quot; /&gt;
+    &lt;script type=&quot;module&quot; crossorigin src=&quot;./assets/index-D7k8-fAa.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; crossorigin href=&quot;./assets/index-BbpbaNVO.css&quot;&gt;
+  &lt;link rel=&quot;manifest&quot; href=&quot;./manifest.webmanifest&quot;&gt;&lt;script id=&quot;vite-plugin-pwa:register-sw&quot; src=&quot;./registerSW.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script type=&quot;application/ld+json&quot;&gt;
+    {
+      &quot;@context&quot;: &quot;https://schema.org&quot;,
+      &quot;@type&quot;: &quot;Organization&quot;,
+      &quot;name&quot;: &quot;Raymi&quot;,
+      &quot;description&quot;: &quot;Cremas naturales de aceituna artesanales peruanas&quot;,
+      &quot;url&quot;: &quot;https://raymi.pe&quot;,
+      &quot;logo&quot;: &quot;/favicon.svg&quot;,
+      &quot;contactPoint&quot;: {
+        &quot;@type&quot;: &quot;ContactPoint&quot;,
+        &quot;contactType&quot;: &quot;customer service&quot;,
+        &quot;availableLanguage&quot;: [&quot;Spanish&quot;]
+      },
+      &quot;address&quot;: {
+        &quot;@type&quot;: &quot;PostalAddress&quot;,
+        &quot;addressCountry&quot;: &quot;PE&quot;
+      },
+      &quot;sameAs&quot;: [
+        &quot;https://www.instagram.com/raymi.pe&quot;,
+        &quot;https://www.facebook.com/raymi.pe&quot;
+      ]
+    }
+    &lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://raymifest.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://raymifest.com/assets/index-D7k8-fAa.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/615.html">CWE-615</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bFROM\b and was detected in likely comment: &quot;//vuejs.org/error-reference/#runtime-${s}`;for(;o;){const d=o.ec;if(d){for(let h=0;h&lt;d.length;h++)if(d[h](e,c,p)===!1)return}o=o&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (285 bytes)</summary>
+				
+				<pre><code>GET https://raymifest.com/assets/index-D7k8-fAa.js HTTP/1.1
+host: raymifest.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://raymifest.com/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (479 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+cache-control: public, max-age=31536000
+expires: Sun, 25 Oct 2026 10:07:07 GMT
+content-type: application/javascript
+last-modified: Sat, 16 Aug 2025 04:04:34 GMT
+accept-ranges: bytes
+content-length: 94970
+date: Sat, 25 Oct 2025 10:07:07 GMT
+vary: User-Agent
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (94970 bytes)</summary>
+				
+				<pre><code>(function(){const t=document.createElement(&quot;link&quot;).relList;if(t&amp;&amp;t.supports&amp;&amp;t.supports(&quot;modulepreload&quot;))return;for(const n of document.querySelectorAll(&#39;link[rel=&quot;modulepreload&quot;]&#39;))r(n);new MutationObserver(n=&gt;{for(const a of n)if(a.type===&quot;childList&quot;)for(const i of a.addedNodes)i.tagName===&quot;LINK&quot;&amp;&amp;i.rel===&quot;modulepreload&quot;&amp;&amp;r(i)}).observe(document,{childList:!0,subtree:!0});function s(n){const a={};return n.integrity&amp;&amp;(a.integrity=n.integrity),n.referrerPolicy&amp;&amp;(a.referrerPolicy=n.referrerPolicy),n.crossOrigin===&quot;use-credentials&quot;?a.credentials=&quot;include&quot;:n.crossOrigin===&quot;anonymous&quot;?a.credentials=&quot;omit&quot;:a.credentials=&quot;same-origin&quot;,a}function r(n){if(n.ep)return;n.ep=!0;const a=s(n);fetch(n.href,a)}})();/**
+* @vue/shared v3.5.18
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**//*! #__NO_SIDE_EFFECTS__ */function Os(e){const t=Object.create(null);for(const s of e.split(&quot;,&quot;))t[s]=1;return s=&gt;s in t}const q={},rt=[],Ce=()=&gt;{},Nn=()=&gt;!1,Gt=e=&gt;e.charCodeAt(0)===111&amp;&amp;e.charCodeAt(1)===110&amp;&amp;(e.charCodeAt(2)&gt;122||e.charCodeAt(2)&lt;97),Is=e=&gt;e.startsWith(&quot;onUpdate:&quot;),ee=Object.assign,Ms=(e,t)=&gt;{const s=e.indexOf(t);s&gt;-1&amp;&amp;e.splice(s,1)},Un=Object.prototype.hasOwnProperty,$=(e,t)=&gt;Un.call(e,t),A=Array.isArray,nt=e=&gt;Jt(e)===&quot;[object Map]&quot;,Or=e=&gt;Jt(e)===&quot;[object Set]&quot;,I=e=&gt;typeof e==&quot;function&quot;,k=e=&gt;typeof e==&quot;string&quot;,Ve=e=&gt;typeof e==&quot;symbol&quot;,K=e=&gt;e!==null&amp;&amp;typeof e==&quot;object&quot;,Ir=e=&gt;(K(e)||I(e))&amp;&amp;I(e.then)&amp;&amp;I(e.catch),Mr=Object.prototype.toString,Jt=e=&gt;Mr.call(e),qn=e=&gt;Jt(e).slice(8,-1),jr=e=&gt;Jt(e)===&quot;[object Object]&quot;,js=e=&gt;k(e)&amp;&amp;e!==&quot;NaN&quot;&amp;&amp;e[0]!==&quot;-&quot;&amp;&amp;&quot;&quot;+parseInt(e,10)===e,vt=Os(&quot;,key,ref,ref_for,ref_key,onVnodeBeforeMount,onVnodeMounted,onVnodeBeforeUpdate,onVnodeUpdated,onVnodeBeforeUnmount,onVnodeUnmounted&quot;),Xt=e=&gt;{const t=Object.create(null);return s=&gt;t[s]||(t[s]=e(s))},Vn=/-(\w)/g,Ne=Xt(e=&gt;e.replace(Vn,(t,s)=&gt;s?s.toUpperCase():&quot;&quot;)),Kn=/\B([A-Z])/g,Qe=Xt(e=&gt;e.replace(Kn,&quot;-$1&quot;).toLowerCase()),Fr=Xt(e=&gt;e.charAt(0).toUpperCase()+e.slice(1)),ls=Xt(e=&gt;e?`on${Fr(e)}`:&quot;&quot;),Be=(e,t)=&gt;!Object.is(e,t),os=(e,...t)=&gt;{for(let s=0;s&lt;e.length;s++)e[s](...t)},bs=(e,t,s,r=!1)=&gt;{Object.defineProperty(e,t,{configurable:!0,enumerable:!1,writable:r,value:s})},Wn=e=&gt;{const t=parseFloat(e);return isNaN(t)?e:t};let tr;const Qt=()=&gt;tr||(tr=typeof globalThis&lt;&quot;u&quot;?globalThis:typeof self&lt;&quot;u&quot;?self:typeof window&lt;&quot;u&quot;?window:typeof global&lt;&quot;u&quot;?global:{});function Zt(e){if(A(e)){const t={};for(let s=0;s&lt;e.length;s++){const r=e[s],n=k(r)?Gn(r):Zt(r);if(n)for(const a in n)t[a]=n[a]}return t}else if(k(e)||K(e))return e}const zn=/;(?![^(]*\))/g,kn=/:([^]+)/,Yn=/\/\*[^]*?\*\//g;function Gn(e){const t={};return e.replace(Yn,&quot;&quot;).split(zn).forEach(s=&gt;{if(s){const r=s.split(kn);r.length&gt;1&amp;&amp;(t[r[0].trim()]=r[1].trim())}}),t}function Pe(e){let t=&quot;&quot;;if(k(e))t=e;else if(A(e))for(let s=0;s&lt;e.length;s++){const r=Pe(e[s]);r&amp;&amp;(t+=r+&quot; &quot;)}else if(K(e))for(const s in e)e[s]&amp;&amp;(t+=s+&quot; &quot;);return t.trim()}const Jn=&quot;itemscope,allowfullscreen,formnovalidate,ismap,nomodule,novalidate,readonly&quot;,Xn=Os(Jn);function Lr(e){return!!e||e===&quot;&quot;}const $r=e=&gt;!!(e&amp;&amp;e.__v_isRef===!0),Dr=e=&gt;k(e)?e:e==null?&quot;&quot;:A(e)||K(e)&amp;&amp;(e.toString===Mr||!I(e.toString))?$r(e)?Dr(e.value):JSON.stringify(e,Hr,2):String(e),Hr=(e,t)=&gt;$r(t)?Hr(e,t.value):nt(t)?{[`Map(${t.size})`]:[...t.entries()].reduce((s,[r,n],a)=&gt;(s[cs(r,a)+&quot; =&gt;&quot;]=n,s),{})}:Or(t)?{[`Set(${t.size})`]:[...t.values()].map(s=&gt;cs(s))}:Ve(t)?cs(t):K(t)&amp;&amp;!A(t)&amp;&amp;!jr(t)?String(t):t,cs=(e,t=&quot;&quot;)=&gt;{var s;return Ve(e)?`Symbol(${(s=e.description)!=null?s:t})`:e};/**
+* @vue/reactivity v3.5.18
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/let le;class Qn{constructor(t=!1){this.detached=t,this._active=!0,this._on=0,this.effects=[],this.cleanups=[],this._isPaused=!1,this.parent=le,!t&amp;&amp;le&amp;&amp;(this.index=(le.scopes||(le.scopes=[])).push(this)-1)}get active(){return this._active}pause(){if(this._active){this._isPaused=!0;let t,s;if(this.scopes)for(t=0,s=this.scopes.length;t&lt;s;t++)this.scopes[t].pause();for(t=0,s=this.effects.length;t&lt;s;t++)this.effects[t].pause()}}resume(){if(this._active&amp;&amp;this._isPaused){this._isPaused=!1;let t,s;if(this.scopes)for(t=0,s=this.scopes.length;t&lt;s;t++)this.scopes[t].resume();for(t=0,s=this.effects.length;t&lt;s;t++)this.effects[t].resume()}}run(t){if(this._active){const s=le;try{return le=this,t()}finally{le=s}}}on(){++this._on===1&amp;&amp;(this.prevScope=le,le=this)}off(){this._on&gt;0&amp;&amp;--this._on===0&amp;&amp;(le=this.prevScope,this.prevScope=void 0)}stop(t){if(this._active){this._active=!1;let s,r;for(s=0,r=this.effects.length;s&lt;r;s++)this.effects[s].stop();for(this.effects.length=0,s=0,r=this.cleanups.length;s&lt;r;s++)this.cleanups[s]();if(this.cleanups.length=0,this.scopes){for(s=0,r=this.scopes.length;s&lt;r;s++)this.scopes[s].stop(!0);this.scopes.length=0}if(!this.detached&amp;&amp;this.parent&amp;&amp;!t){const n=this.parent.scopes.pop();n&amp;&amp;n!==this&amp;&amp;(this.parent.scopes[this.index]=n,n.index=this.index)}this.parent=void 0}}}function Zn(){return le}let U;const fs=new WeakSet;class Br{constructor(t){this.fn=t,this.deps=void 0,this.depsTail=void 0,this.flags=5,this.next=void 0,this.cleanup=void 0,this.scheduler=void 0,le&amp;&amp;le.active&amp;&amp;le.effects.push(this)}pause(){this.flags|=64}resume(){this.flags&amp;64&amp;&amp;(this.flags&amp;=-65,fs.has(this)&amp;&amp;(fs.delete(this),this.trigger()))}notify(){this.flags&amp;2&amp;&amp;!(this.flags&amp;32)||this.flags&amp;8||Ur(this)}run(){if(!(this.flags&amp;1))return this.fn();this.flags|=2,sr(this),qr(this);const t=U,s=ue;U=this,ue=!0;try{return this.fn()}finally{Vr(this),U=t,ue=s,this.flags&amp;=-3}}stop(){if(this.flags&amp;1){for(let t=this.deps;t;t=t.nextDep)$s(t);this.deps=this.depsTail=void 0,sr(this),this.onStop&amp;&amp;this.onStop(),this.flags&amp;=-2}}trigger(){this.flags&amp;64?fs.add(this):this.scheduler?this.scheduler():this.runIfDirty()}runIfDirty(){_s(this)&amp;&amp;this.run()}get dirty(){return _s(this)}}let Nr=0,xt,bt;function Ur(e,t=!1){if(e.flags|=8,t){e.next=bt,bt=e;return}e.next=xt,xt=e}function Fs(){Nr++}function Ls(){if(--Nr&gt;0)return;if(bt){let t=bt;for(bt=void 0;t;){const s=t.next;t.next=void 0,t.flags&amp;=-9,t=s}}let e;for(;xt;){let t=xt;for(xt=void 0;t;){const s=t.next;if(t.next=void 0,t.flags&amp;=-9,t.flags&amp;1)try{t.trigger()}catch(r){e||(e=r)}t=s}}if(e)throw e}function qr(e){for(let t=e.deps;t;t=t.nextDep)t.version=-1,t.prevActiveLink=t.dep.activeLink,t.dep.activeLink=t}function Vr(e){let t,s=e.depsTail,r=s;for(;r;){const n=r.prevDep;r.version===-1?(r===s&amp;&amp;(s=n),$s(r),ea(r)):t=r,r.dep.activeLink=r.prevActiveLink,r.prevActiveLink=void 0,r=n}e.deps=t,e.depsTail=s}function _s(e){for(let t=e.deps;t;t=t.nextDep)if(t.dep.version!==t.version||t.dep.computed&amp;&amp;(Kr(t.dep.computed)||t.dep.version!==t.version))return!0;return!!e._dirty}function Kr(e){if(e.flags&amp;4&amp;&amp;!(e.flags&amp;16)||(e.flags&amp;=-17,e.globalVersion===St)||(e.globalVersion=St,!e.isSSR&amp;&amp;e.flags&amp;128&amp;&amp;(!e.deps&amp;&amp;!e._dirty||!_s(e))))return;e.flags|=2;const t=e.dep,s=U,r=ue;U=e,ue=!0;try{qr(e);const n=e.fn(e._value);(t.version===0||Be(n,e._value))&amp;&amp;(e.flags|=128,e._value=n,t.version++)}catch(n){throw t.version++,n}finally{U=s,ue=r,Vr(e),e.flags&amp;=-3}}function $s(e,t=!1){const{dep:s,prevSub:r,nextSub:n}=e;if(r&amp;&amp;(r.nextSub=n,e.prevSub=void 0),n&amp;&amp;(n.prevSub=r,e.nextSub=void 0),s.subs===e&amp;&amp;(s.subs=r,!r&amp;&amp;s.computed)){s.computed.flags&amp;=-5;for(let a=s.computed.deps;a;a=a.nextDep)$s(a,!0)}!t&amp;&amp;!--s.sc&amp;&amp;s.map&amp;&amp;s.map.delete(s.key)}function ea(e){const{prevDep:t,nextDep:s}=e;t&amp;&amp;(t.nextDep=s,e.prevDep=void 0),s&amp;&amp;(s.prevDep=t,e.nextDep=void 0)}let ue=!0;const Wr=[];function Ie(){Wr.push(ue),ue=!1}function Me(){const e=Wr.pop();ue=e===void 0?!0:e}function sr(e){const{cleanup:t}=e;if(e.cleanup=void 0,t){const s=U;U=void 0;try{t()}finally{U=s}}}let St=0;class ta{constructor(t,s){this.sub=t,this.dep=s,this.version=s.version,this.nextDep=this.prevDep=this.nextSub=this.prevSub=this.prevActiveLink=void 0}}class Ds{constructor(t){this.computed=t,this.version=0,this.activeLink=void 0,this.subs=void 0,this.map=void 0,this.key=void 0,this.sc=0,this.__v_skip=!0}track(t){if(!U||!ue||U===this.computed)return;let s=this.activeLink;if(s===void 0||s.sub!==U)s=this.activeLink=new ta(U,this),U.deps?(s.prevDep=U.depsTail,U.depsTail.nextDep=s,U.depsTail=s):U.deps=U.depsTail=s,zr(s);else if(s.version===-1&amp;&amp;(s.version=this.version,s.nextDep)){const r=s.nextDep;r.prevDep=s.prevDep,s.prevDep&amp;&amp;(s.prevDep.nextDep=r),s.prevDep=U.depsTail,s.nextDep=void 0,U.depsTail.nextDep=s,U.depsTail=s,U.deps===s&amp;&amp;(U.deps=r)}return s}trigger(t){this.version++,St++,this.notify(t)}notify(t){Fs();try{for(let s=this.subs;s;s=s.prevSub)s.sub.notify()&amp;&amp;s.sub.dep.notify()}finally{Ls()}}}function zr(e){if(e.dep.sc++,e.sub.flags&amp;4){const t=e.dep.computed;if(t&amp;&amp;!e.dep.subs){t.flags|=20;for(let r=t.deps;r;r=r.nextDep)zr(r)}const s=e.dep.subs;s!==e&amp;&amp;(e.prevSub=s,s&amp;&amp;(s.nextSub=e)),e.dep.subs=e}}const ys=new WeakMap,Xe=Symbol(&quot;&quot;),ws=Symbol(&quot;&quot;),Et=Symbol(&quot;&quot;);function X(e,t,s){if(ue&amp;&amp;U){let r=ys.get(e);r||ys.set(e,r=new Map);let n=r.get(s);n||(r.set(s,n=new Ds),n.map=r,n.key=s),n.track()}}function Ae(e,t,s,r,n,a){const i=ys.get(e);if(!i){St++;return}const o=c=&gt;{c&amp;&amp;c.trigger()};if(Fs(),t===&quot;clear&quot;)i.forEach(o);else{const c=A(e),p=c&amp;&amp;js(s);if(c&amp;&amp;s===&quot;length&quot;){const d=Number(r);i.forEach((h,C)=&gt;{(C===&quot;length&quot;||C===Et||!Ve(C)&amp;&amp;C&gt;=d)&amp;&amp;o(h)})}else switch((s!==void 0||i.has(void 0))&amp;&amp;o(i.get(s)),p&amp;&amp;o(i.get(Et)),t){case&quot;add&quot;:c?p&amp;&amp;o(i.get(&quot;length&quot;)):(o(i.get(Xe)),nt(e)&amp;&amp;o(i.get(ws)));break;case&quot;delete&quot;:c||(o(i.get(Xe)),nt(e)&amp;&amp;o(i.get(ws)));break;case&quot;set&quot;:nt(e)&amp;&amp;o(i.get(Xe));break}}Ls()}function tt(e){const t=L(e);return t===e?t:(X(t,&quot;iterate&quot;,Et),de(e)?t:t.map(G))}function es(e){return X(e=L(e),&quot;iterate&quot;,Et),e}const sa={__proto__:null,[Symbol.iterator](){return ds(this,Symbol.iterator,G)},concat(...e){return tt(this).concat(...e.map(t=&gt;A(t)?tt(t):t))},entries(){return ds(this,&quot;entries&quot;,e=&gt;(e[1]=G(e[1]),e))},every(e,t){return Te(this,&quot;every&quot;,e,t,void 0,arguments)},filter(e,t){return Te(this,&quot;filter&quot;,e,t,s=&gt;s.map(G),arguments)},find(e,t){return Te(this,&quot;find&quot;,e,t,G,arguments)},findIndex(e,t){return Te(this,&quot;findIndex&quot;,e,t,void 0,arguments)},findLast(e,t){return Te(this,&quot;findLast&quot;,e,t,G,arguments)},findLastIndex(e,t){return Te(this,&quot;findLastIndex&quot;,e,t,void 0,arguments)},forEach(e,t){return Te(this,&quot;forEach&quot;,e,t,void 0,arguments)},includes(...e){return us(this,&quot;includes&quot;,e)},indexOf(...e){return us(this,&quot;indexOf&quot;,e)},join(e){return tt(this).join(e)},lastIndexOf(...e){return us(this,&quot;lastIndexOf&quot;,e)},map(e,t){return Te(this,&quot;map&quot;,e,t,void 0,arguments)},pop(){return ht(this,&quot;pop&quot;)},push(...e){return ht(this,&quot;push&quot;,e)},reduce(e,...t){return rr(this,&quot;reduce&quot;,e,t)},reduceRight(e,...t){return rr(this,&quot;reduceRight&quot;,e,t)},shift(){return ht(this,&quot;shift&quot;)},some(e,t){return Te(this,&quot;some&quot;,e,t,void 0,arguments)},splice(...e){return ht(this,&quot;splice&quot;,e)},toReversed(){return tt(this).toReversed()},toSorted(e){return tt(this).toSorted(e)},toSpliced(...e){return tt(this).toSpliced(...e)},unshift(...e){return ht(this,&quot;unshift&quot;,e)},values(){return ds(this,&quot;values&quot;,G)}};function ds(e,t,s){const r=es(e),n=r[t]();return r!==e&amp;&amp;!de(e)&amp;&amp;(n._next=n.next,n.next=()=&gt;{const a=n._next();return a.value&amp;&amp;(a.value=s(a.value)),a}),n}const ra=Array.prototype;function Te(e,t,s,r,n,a){const i=es(e),o=i!==e&amp;&amp;!de(e),c=i[t];if(c!==ra[t]){const h=c.apply(e,a);return o?G(h):h}let p=s;i!==e&amp;&amp;(o?p=function(h,C){return s.call(this,G(h),C,e)}:s.length&gt;2&amp;&amp;(p=function(h,C){return s.call(this,h,C,e)}));const d=c.call(i,p,r);return o&amp;&amp;n?n(d):d}function rr(e,t,s,r){const n=es(e);let a=s;return n!==e&amp;&amp;(de(e)?s.length&gt;3&amp;&amp;(a=function(i,o,c){return s.call(this,i,o,c,e)}):a=function(i,o,c){return s.call(this,i,G(o),c,e)}),n[t](a,...r)}function us(e,t,s){const r=L(e);X(r,&quot;iterate&quot;,Et);const n=r[t](...s);return(n===-1||n===!1)&amp;&amp;Us(s[0])?(s[0]=L(s[0]),r[t](...s)):n}function ht(e,t,s=[]){Ie(),Fs();const r=L(e)[t].apply(e,s);return Ls(),Me(),r}const na=Os(&quot;__proto__,__v_isRef,__isVue&quot;),kr=new Set(Object.getOwnPropertyNames(Symbol).filter(e=&gt;e!==&quot;arguments&quot;&amp;&amp;e!==&quot;caller&quot;).map(e=&gt;Symbol[e]).filter(Ve));function aa(e){Ve(e)||(e=String(e));const t=L(this);return X(t,&quot;has&quot;,e),t.hasOwnProperty(e)}class Yr{constructor(t=!1,s=!1){this._isReadonly=t,this._isShallow=s}get(t,s,r){if(s===&quot;__v_skip&quot;)return t.__v_skip;const n=this._isReadonly,a=this._isShallow;if(s===&quot;__v_isReactive&quot;)return!n;if(s===&quot;__v_isReadonly&quot;)return n;if(s===&quot;__v_isShallow&quot;)return a;if(s===&quot;__v_raw&quot;)return r===(n?a?ga:Qr:a?Xr:Jr).get(t)||Object.getPrototypeOf(t)===Object.getPrototypeOf(r)?t:void 0;const i=A(t);if(!n){let c;if(i&amp;&amp;(c=sa[s]))return c;if(s===&quot;hasOwnProperty&quot;)return aa}const o=Reflect.get(t,s,Z(t)?t:r);return(Ve(s)?kr.has(s):na(s))||(n||X(t,&quot;get&quot;,s),a)?o:Z(o)?i&amp;&amp;js(s)?o:o.value:K(o)?n?Zr(o):Bs(o):o}}class Gr extends Yr{constructor(t=!1){super(!1,t)}set(t,s,r,n){let a=t[s];if(!this._isShallow){const c=Ue(a);if(!de(r)&amp;&amp;!Ue(r)&amp;&amp;(a=L(a),r=L(r)),!A(t)&amp;&amp;Z(a)&amp;&amp;!Z(r))return c?!1:(a.value=r,!0)}const i=A(t)&amp;&amp;js(s)?Number(s)&lt;t.length:$(t,s),o=Reflect.set(t,s,r,Z(t)?t:n);return t===L(n)&amp;&amp;(i?Be(r,a)&amp;&amp;Ae(t,&quot;set&quot;,s,r):Ae(t,&quot;add&quot;,s,r)),o}deleteProperty(t,s){const r=$(t,s);t[s];const n=Reflect.deleteProperty(t,s);return n&amp;&amp;r&amp;&amp;Ae(t,&quot;delete&quot;,s,void 0),n}has(t,s){const r=Reflect.has(t,s);return(!Ve(s)||!kr.has(s))&amp;&amp;X(t,&quot;has&quot;,s),r}ownKeys(t){return X(t,&quot;iterate&quot;,A(t)?&quot;length&quot;:Xe),Reflect.ownKeys(t)}}class ia extends Yr{constructor(t=!1){super(!0,t)}set(t,s){return!0}deleteProperty(t,s){return!0}}const la=new Gr,oa=new ia,ca=new Gr(!0);const Cs=e=&gt;e,$t=e=&gt;Reflect.getPrototypeOf(e);function fa(e,t,s){return function(...r){const n=this.__v_raw,a=L(n),i=nt(a),o=e===&quot;entries&quot;||e===Symbol.iterator&amp;&amp;i,c=e===&quot;keys&quot;&amp;&amp;i,p=n[e](...r),d=s?Cs:t?Vt:G;return!t&amp;&amp;X(a,&quot;iterate&quot;,c?ws:Xe),{next(){const{value:h,done:C}=p.next();return C?{value:h,done:C}:{value:o?[d(h[0]),d(h[1])]:d(h),done:C}},[Symbol.iterator](){return this}}}}function Dt(e){return function(...t){return e===&quot;delete&quot;?!1:e===&quot;clear&quot;?void 0:this}}function da(e,t){const s={get(n){const a=this.__v_raw,i=L(a),o=L(n);e||(Be(n,o)&amp;&amp;X(i,&quot;get&quot;,n),X(i,&quot;get&quot;,o));const{has:c}=$t(i),p=t?Cs:e?Vt:G;if(c.call(i,n))return p(a.get(n));if(c.call(i,o))return p(a.get(o));a!==i&amp;&amp;a.get(n)},get size(){const n=this.__v_raw;return!e&amp;&amp;X(L(n),&quot;iterate&quot;,Xe),Reflect.get(n,&quot;size&quot;,n)},has(n){const a=this.__v_raw,i=L(a),o=L(n);return e||(Be(n,o)&amp;&amp;X(i,&quot;has&quot;,n),X(i,&quot;has&quot;,o)),n===o?a.has(n):a.has(n)||a.has(o)},forEach(n,a){const i=this,o=i.__v_raw,c=L(o),p=t?Cs:e?Vt:G;return!e&amp;&amp;X(c,&quot;iterate&quot;,Xe),o.forEach((d,h)=&gt;n.call(a,p(d),p(h),i))}};return ee(s,e?{add:Dt(&quot;add&quot;),set:Dt(&quot;set&quot;),delete:Dt(&quot;delete&quot;),clear:Dt(&quot;clear&quot;)}:{add(n){!t&amp;&amp;!de(n)&amp;&amp;!Ue(n)&amp;&amp;(n=L(n));const a=L(this);return $t(a).has.call(a,n)||(a.add(n),Ae(a,&quot;add&quot;,n,n)),this},set(n,a){!t&amp;&amp;!de(a)&amp;&amp;!Ue(a)&amp;&amp;(a=L(a));const i=L(this),{has:o,get:c}=$t(i);let p=o.call(i,n);p||(n=L(n),p=o.call(i,n));const d=c.call(i,n);return i.set(n,a),p?Be(a,d)&amp;&amp;Ae(i,&quot;set&quot;,n,a):Ae(i,&quot;add&quot;,n,a),this},delete(n){const a=L(this),{has:i,get:o}=$t(a);let c=i.call(a,n);c||(n=L(n),c=i.call(a,n)),o&amp;&amp;o.call(a,n);const p=a.delete(n);return c&amp;&amp;Ae(a,&quot;delete&quot;,n,void 0),p},clear(){const n=L(this),a=n.size!==0,i=n.clear();return a&amp;&amp;Ae(n,&quot;clear&quot;,void 0,void 0),i}}),[&quot;keys&quot;,&quot;values&quot;,&quot;entries&quot;,Symbol.iterator].forEach(n=&gt;{s[n]=fa(n,e,t)}),s}function Hs(e,t){const s=da(e,t);return(r,n,a)=&gt;n===&quot;__v_isReactive&quot;?!e:n===&quot;__v_isReadonly&quot;?e:n===&quot;__v_raw&quot;?r:Reflect.get($(s,n)&amp;&amp;n in r?s:r,n,a)}const ua={get:Hs(!1,!1)},pa={get:Hs(!1,!0)},ha={get:Hs(!0,!1)};const Jr=new WeakMap,Xr=new WeakMap,Qr=new WeakMap,ga=new WeakMap;function ma(e){switch(e){case&quot;Object&quot;:case&quot;Array&quot;:return 1;case&quot;Map&quot;:case&quot;Set&quot;:case&quot;WeakMap&quot;:case&quot;WeakSet&quot;:return 2;default:return 0}}function va(e){return e.__v_skip||!Object.isExtensible(e)?0:ma(qn(e))}function Bs(e){return Ue(e)?e:Ns(e,!1,la,ua,Jr)}function xa(e){return Ns(e,!1,ca,pa,Xr)}function Zr(e){return Ns(e,!0,oa,ha,Qr)}function Ns(e,t,s,r,n){if(!K(e)||e.__v_raw&amp;&amp;!(t&amp;&amp;e.__v_isReactive))return e;const a=va(e);if(a===0)return e;const i=n.get(e);if(i)return i;const o=new Proxy(e,a===2?r:s);return n.set(e,o),o}function at(e){return Ue(e)?at(e.__v_raw):!!(e&amp;&amp;e.__v_isReactive)}function Ue(e){return!!(e&amp;&amp;e.__v_isReadonly)}function de(e){return!!(e&amp;&amp;e.__v_isShallow)}function Us(e){return e?!!e.__v_raw:!1}function L(e){const t=e&amp;&amp;e.__v_raw;return t?L(t):e}function ba(e){return!$(e,&quot;__v_skip&quot;)&amp;&amp;Object.isExtensible(e)&amp;&amp;bs(e,&quot;__v_skip&quot;,!0),e}const G=e=&gt;K(e)?Bs(e):e,Vt=e=&gt;K(e)?Zr(e):e;function Z(e){return e?e.__v_isRef===!0:!1}function ps(e){return _a(e,!1)}function _a(e,t){return Z(e)?e:new ya(e,t)}class ya{constructor(t,s){this.dep=new Ds,this.__v_isRef=!0,this.__v_isShallow=!1,this._rawValue=s?t:L(t),this._value=s?t:G(t),this.__v_isShallow=s}get value(){return this.dep.track(),this._value}set value(t){const s=this._rawValue,r=this.__v_isShallow||de(t)||Ue(t);t=r?t:L(t),Be(t,s)&amp;&amp;(this._rawValue=t,this._value=r?t:G(t),this.dep.trigger())}}function Ge(e){return Z(e)?e.value:e}const wa={get:(e,t,s)=&gt;t===&quot;__v_raw&quot;?e:Ge(Reflect.get(e,t,s)),set:(e,t,s,r)=&gt;{const n=e[t];return Z(n)&amp;&amp;!Z(s)?(n.value=s,!0):Reflect.set(e,t,s,r)}};function en(e){return at(e)?e:new Proxy(e,wa)}class Ca{constructor(t,s,r){this.fn=t,this.setter=s,this._value=void 0,this.dep=new Ds(this),this.__v_isRef=!0,this.deps=void 0,this.depsTail=void 0,this.flags=16,this.globalVersion=St-1,this.next=void 0,this.effect=this,this.__v_isReadonly=!s,this.isSSR=r}notify(){if(this.flags|=16,!(this.flags&amp;8)&amp;&amp;U!==this)return Ur(this,!0),!0}get value(){const t=this.dep.track();return Kr(this),t&amp;&amp;(t.version=this.dep.version),this._value}set value(t){this.setter&amp;&amp;this.setter(t)}}function Sa(e,t,s=!1){let r,n;return I(e)?r=e:(r=e.get,n=e.set),new Ca(r,n,s)}const Ht={},Kt=new WeakMap;let Je;function Ea(e,t=!1,s=Je){if(s){let r=Kt.get(s);r||Kt.set(s,r=[]),r.push(e)}}function Ta(e,t,s=q){const{immediate:r,deep:n,once:a,scheduler:i,augmentJob:o,call:c}=s,p=R=&gt;n?R:de(R)||n===!1||n===0?He(R,1):He(R);let d,h,C,S,F=!1,j=!1;if(Z(e)?(h=()=&gt;e.value,F=de(e)):at(e)?(h=()=&gt;p(e),F=!0):A(e)?(j=!0,F=e.some(R=&gt;at(R)||de(R)),h=()=&gt;e.map(R=&gt;{if(Z(R))return R.value;if(at(R))return p(R);if(I(R))return c?c(R,2):R()})):I(e)?t?h=c?()=&gt;c(e,2):e:h=()=&gt;{if(C){Ie();try{C()}finally{Me()}}const R=Je;Je=d;try{return c?c(e,3,[S]):e(S)}finally{Je=R}}:h=Ce,t&amp;&amp;n){const R=h,Y=n===!0?1/0:n;h=()=&gt;He(R(),Y)}const J=Zn(),H=()=&gt;{d.stop(),J&amp;&amp;J.active&amp;&amp;Ms(J.effects,d)};if(a&amp;&amp;t){const R=t;t=(...Y)=&gt;{R(...Y),H()}}let W=j?new Array(e.length).fill(Ht):Ht;const z=R=&gt;{if(!(!(d.flags&amp;1)||!d.dirty&amp;&amp;!R))if(t){const Y=d.run();if(n||F||(j?Y.some((Fe,pe)=&gt;Be(Fe,W[pe])):Be(Y,W))){C&amp;&amp;C();const Fe=Je;Je=d;try{const pe=[Y,W===Ht?void 0:j&amp;&amp;W[0]===Ht?[]:W,S];W=Y,c?c(t,3,pe):t(...pe)}finally{Je=Fe}}}else d.run()};return o&amp;&amp;o(z),d=new Br(h),d.scheduler=i?()=&gt;i(z,!1):z,S=R=&gt;Ea(R,!1,d),C=d.onStop=()=&gt;{const R=Kt.get(d);if(R){if(c)c(R,4);else for(const Y of R)Y();Kt.delete(d)}},t?r?z(!0):W=d.run():i?i(z.bind(null,!0),!0):d.run(),H.pause=d.pause.bind(d),H.resume=d.resume.bind(d),H.stop=H,H}function He(e,t=1/0,s){if(t&lt;=0||!K(e)||e.__v_skip||(s=s||new Set,s.has(e)))return e;if(s.add(e),t--,Z(e))He(e.value,t,s);else if(A(e))for(let r=0;r&lt;e.length;r++)He(e[r],t,s);else if(Or(e)||nt(e))e.forEach(r=&gt;{He(r,t,s)});else if(jr(e)){for(const r in e)He(e[r],t,s);for(const r of Object.getOwnPropertySymbols(e))Object.prototype.propertyIsEnumerable.call(e,r)&amp;&amp;He(e[r],t,s)}return e}/**
+* @vue/runtime-core v3.5.18
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/function At(e,t,s,r){try{return r?e(...r):e()}catch(n){ts(n,t,s)}}function Ee(e,t,s,r){if(I(e)){const n=At(e,t,s,r);return n&amp;&amp;Ir(n)&amp;&amp;n.catch(a=&gt;{ts(a,t,s)}),n}if(A(e)){const n=[];for(let a=0;a&lt;e.length;a++)n.push(Ee(e[a],t,s,r));return n}}function ts(e,t,s,r=!0){const n=t?t.vnode:null,{errorHandler:a,throwUnhandledErrorInProduction:i}=t&amp;&amp;t.appContext.config||q;if(t){let o=t.parent;const c=t.proxy,p=`https://vuejs.org/error-reference/#runtime-${s}`;for(;o;){const d=o.ec;if(d){for(let h=0;h&lt;d.length;h++)if(d[h](e,c,p)===!1)return}o=o.parent}if(a){Ie(),At(a,null,10,[e,c,p]),Me();return}}Ra(e,s,n,r,i)}function Ra(e,t,s,r=!0,n=!1){if(n)throw e;console.error(e)}const re=[];let be=-1;const it=[];let $e=null,st=0;const tn=Promise.resolve();let Wt=null;function Pa(e){const t=Wt||tn;return e?t.then(this?e.bind(this):e):t}function Aa(e){let t=be+1,s=re.length;for(;t&lt;s;){const r=t+s&gt;&gt;&gt;1,n=re[r],a=Tt(n);a&lt;e||a===e&amp;&amp;n.flags&amp;2?t=r+1:s=r}return t}function qs(e){if(!(e.flags&amp;1)){const t=Tt(e),s=re[re.length-1];!s||!(e.flags&amp;2)&amp;&amp;t&gt;=Tt(s)?re.push(e):re.splice(Aa(t),0,e),e.flags|=1,sn()}}function sn(){Wt||(Wt=tn.then(nn))}function Oa(e){A(e)?it.push(...e):$e&amp;&amp;e.id===-1?$e.splice(st+1,0,e):e.flags&amp;1||(it.push(e),e.flags|=1),sn()}function nr(e,t,s=be+1){for(;s&lt;re.length;s++){const r=re[s];if(r&amp;&amp;r.flags&amp;2){if(e&amp;&amp;r.id!==e.uid)continue;re.splice(s,1),s--,r.flags&amp;4&amp;&amp;(r.flags&amp;=-2),r(),r.flags&amp;4||(r.flags&amp;=-2)}}}function rn(e){if(it.length){const t=[...new Set(it)].sort((s,r)=&gt;Tt(s)-Tt(r));if(it.length=0,$e){$e.push(...t);return}for($e=t,st=0;st&lt;$e.length;st++){const s=$e[st];s.flags&amp;4&amp;&amp;(s.flags&amp;=-2),s.flags&amp;8||s(),s.flags&amp;=-2}$e=null,st=0}}const Tt=e=&gt;e.id==null?e.flags&amp;2?-1:1/0:e.id;function nn(e){try{for(be=0;be&lt;re.length;be++){const t=re[be];t&amp;&amp;!(t.flags&amp;8)&amp;&amp;(t.flags&amp;4&amp;&amp;(t.flags&amp;=-2),At(t,t.i,t.i?15:14),t.flags&amp;4||(t.flags&amp;=-2))}}finally{for(;be&lt;re.length;be++){const t=re[be];t&amp;&amp;(t.flags&amp;=-2)}be=-1,re.length=0,rn(),Wt=null,(re.length||it.length)&amp;&amp;nn()}}let we=null,an=null;function zt(e){const t=we;return we=e,an=e&amp;&amp;e.type.__scopeId||null,t}function Ia(e,t=we,s){if(!t||e._n)return e;const r=(...n)=&gt;{r._d&amp;&amp;pr(-1);const a=zt(t);let i;try{i=e(...n)}finally{zt(a),r._d&amp;&amp;pr(1)}return i};return r._n=!0,r._c=!0,r._d=!0,r}function ke(e,t,s,r){const n=e.dirs,a=t&amp;&amp;t.dirs;for(let i=0;i&lt;n.length;i++){const o=n[i];a&amp;&amp;(o.oldValue=a[i].value);let c=o.dir[r];c&amp;&amp;(Ie(),Ee(c,s,8,[e.el,o,e,t]),Me())}}const Ma=Symbol(&quot;_vte&quot;),ja=e=&gt;e.__isTeleport;function Vs(e,t){e.shapeFlag&amp;6&amp;&amp;e.component?(e.transition=t,Vs(e.component.subTree,t)):e.shapeFlag&amp;128?(e.ssContent.transition=t.clone(e.ssContent),e.ssFallback.transition=t.clone(e.ssFallback)):e.transition=t}/*! #__NO_SIDE_EFFECTS__ */function Ze(e,t){return I(e)?ee({name:e.name},t,{setup:e}):e}function ln(e){e.ids=[e.ids[0]+e.ids[2]+++&quot;-&quot;,0,0]}function _t(e,t,s,r,n=!1){if(A(e)){e.forEach((F,j)=&gt;_t(F,t&amp;&amp;(A(t)?t[j]:t),s,r,n));return}if(yt(r)&amp;&amp;!n){r.shapeFlag&amp;512&amp;&amp;r.type.__asyncResolved&amp;&amp;r.component.subTree.component&amp;&amp;_t(e,t,s,r.component.subTree);return}const a=r.shapeFlag&amp;4?Ys(r.component):r.el,i=n?null:a,{i:o,r:c}=e,p=t&amp;&amp;t.r,d=o.refs===q?o.refs={}:o.refs,h=o.setupState,C=L(h),S=h===q?()=&gt;!1:F=&gt;$(C,F);if(p!=null&amp;&amp;p!==c&amp;&amp;(k(p)?(d[p]=null,S(p)&amp;&amp;(h[p]=null)):Z(p)&amp;&amp;(p.value=null)),I(c))At(c,o,12,[i,d]);else{const F=k(c),j=Z(c);if(F||j){const J=()=&gt;{if(e.f){const H=F?S(c)?h[c]:d[c]:c.value;n?A(H)&amp;&amp;Ms(H,a):A(H)?H.includes(a)||H.push(a):F?(d[c]=[a],S(c)&amp;&amp;(h[c]=d[c])):(c.value=[a],e.k&amp;&amp;(d[e.k]=c.value))}else F?(d[c]=i,S(c)&amp;&amp;(h[c]=i)):j&amp;&amp;(c.value=i,e.k&amp;&amp;(d[e.k]=i))};i?(J.id=-1,ce(J,s)):J()}}}Qt().requestIdleCallback;Qt().cancelIdleCallback;const yt=e=&gt;!!e.type.__asyncLoader,on=e=&gt;e.type.__isKeepAlive;function Fa(e,t){cn(e,&quot;a&quot;,t)}function La(e,t){cn(e,&quot;da&quot;,t)}function cn(e,t,s=ne){const r=e.__wdc||(e.__wdc=()=&gt;{let n=s;for(;n;){if(n.isDeactivated)return;n=n.parent}return e()});if(ss(t,r,s),s){let n=s.parent;for(;n&amp;&amp;n.parent;)on(n.parent.vnode)&amp;&amp;$a(r,t,s,n),n=n.parent}}function $a(e,t,s,r){const n=ss(t,e,r,!0);Ks(()=&gt;{Ms(r[t],n)},s)}function ss(e,t,s=ne,r=!1){if(s){const n=s[e]||(s[e]=[]),a=t.__weh||(t.__weh=(...i)=&gt;{Ie();const o=Ot(s),c=Ee(t,s,e,i);return o(),Me(),c});return r?n.unshift(a):n.push(a),a}}const je=e=&gt;(t,s=ne)=&gt;{(!Pt||e===&quot;sp&quot;)&amp;&amp;ss(e,(...r)=&gt;t(...r),s)},Da=je(&quot;bm&quot;),fn=je(&quot;m&quot;),Ha=je(&quot;bu&quot;),Ba=je(&quot;u&quot;),Na=je(&quot;bum&quot;),Ks=je(&quot;um&quot;),Ua=je(&quot;sp&quot;),qa=je(&quot;rtg&quot;),Va=je(&quot;rtc&quot;);function Ka(e,t=ne){ss(&quot;ec&quot;,e,t)}const Wa=Symbol.for(&quot;v-ndc&quot;);function za(e,t,s,r){let n;const a=s,i=A(e);if(i||k(e)){const o=i&amp;&amp;at(e);let c=!1,p=!1;o&amp;&amp;(c=!de(e),p=Ue(e),e=es(e)),n=new Array(e.length);for(let d=0,h=e.length;d&lt;h;d++)n[d]=t(c?p?Vt(G(e[d])):G(e[d]):e[d],d,void 0,a)}else if(typeof e==&quot;number&quot;){n=new Array(e);for(let o=0;o&lt;e;o++)n[o]=t(o+1,o,void 0,a)}else if(K(e))if(e[Symbol.iterator])n=Array.from(e,(o,c)=&gt;t(o,c,void 0,a));else{const o=Object.keys(e);n=new Array(o.length);for(let c=0,p=o.length;c&lt;p;c++){const d=o[c];n[c]=t(e[d],d,c,a)}}else n=[];return n}const Ss=e=&gt;e?Mn(e)?Ys(e):Ss(e.parent):null,wt=ee(Object.create(null),{$:e=&gt;e,$el:e=&gt;e.vnode.el,$data:e=&gt;e.data,$props:e=&gt;e.props,$attrs:e=&gt;e.attrs,$slots:e=&gt;e.slots,$refs:e=&gt;e.refs,$parent:e=&gt;Ss(e.parent),$root:e=&gt;Ss(e.root),$host:e=&gt;e.ce,$emit:e=&gt;e.emit,$options:e=&gt;un(e),$forceUpdate:e=&gt;e.f||(e.f=()=&gt;{qs(e.update)}),$nextTick:e=&gt;e.n||(e.n=Pa.bind(e.proxy)),$watch:e=&gt;hi.bind(e)}),hs=(e,t)=&gt;e!==q&amp;&amp;!e.__isScriptSetup&amp;&amp;$(e,t),ka={get({_:e},t){if(t===&quot;__v_skip&quot;)return!0;const{ctx:s,setupState:r,data:n,props:a,accessCache:i,type:o,appContext:c}=e;let p;if(t[0]!==&quot;$&quot;){const S=i[t];if(S!==void 0)switch(S){case 1:return r[t];case 2:return n[t];case 4:return s[t];case 3:return a[t]}else{if(hs(r,t))return i[t]=1,r[t];if(n!==q&amp;&amp;$(n,t))return i[t]=2,n[t];if((p=e.propsOptions[0])&amp;&amp;$(p,t))return i[t]=3,a[t];if(s!==q&amp;&amp;$(s,t))return i[t]=4,s[t];Es&amp;&amp;(i[t]=0)}}const d=wt[t];let h,C;if(d)return t===&quot;$attrs&quot;&amp;&amp;X(e.attrs,&quot;get&quot;,&quot;&quot;),d(e);if((h=o.__cssModules)&amp;&amp;(h=h[t]))return h;if(s!==q&amp;&amp;$(s,t))return i[t]=4,s[t];if(C=c.config.globalProperties,$(C,t))return C[t]},set({_:e},t,s){const{data:r,setupState:n,ctx:a}=e;return hs(n,t)?(n[t]=s,!0):r!==q&amp;&amp;$(r,t)?(r[t]=s,!0):$(e.props,t)||t[0]===&quot;$&quot;&amp;&amp;t.slice(1)in e?!1:(a[t]=s,!0)},has({_:{data:e,setupState:t,accessCache:s,ctx:r,appContext:n,propsOptions:a}},i){let o;return!!s[i]||e!==q&amp;&amp;$(e,i)||hs(t,i)||(o=a[0])&amp;&amp;$(o,i)||$(r,i)||$(wt,i)||$(n.config.globalProperties,i)},defineProperty(e,t,s){return s.get!=null?e._.accessCache[t]=0:$(s,&quot;value&quot;)&amp;&amp;this.set(e,t,s.value,null),Reflect.defineProperty(e,t,s)}};function ar(e){return A(e)?e.reduce((t,s)=&gt;(t[s]=null,t),{}):e}let Es=!0;function Ya(e){const t=un(e),s=e.proxy,r=e.ctx;Es=!1,t.beforeCreate&amp;&amp;ir(t.beforeCreate,e,&quot;bc&quot;);const{data:n,computed:a,methods:i,watch:o,provide:c,inject:p,created:d,beforeMount:h,mounted:C,beforeUpdate:S,updated:F,activated:j,deactivated:J,beforeDestroy:H,beforeUnmount:W,destroyed:z,unmounted:R,render:Y,renderTracked:Fe,renderTriggered:pe,errorCaptured:Le,serverPrefetch:It,expose:Ke,inheritAttrs:ft,components:Mt,directives:jt,filters:as}=t;if(p&amp;&amp;Ga(p,r,null),i)for(const V in i){const B=i[V];I(B)&amp;&amp;(r[V]=B.bind(s))}if(n){const V=n.call(s,s);K(V)&amp;&amp;(e.data=Bs(V))}if(Es=!0,a)for(const V in a){const B=a[V],We=I(B)?B.bind(s,s):I(B.get)?B.get.bind(s,s):Ce,Ft=!I(B)&amp;&amp;I(B.set)?B.set.bind(s):Ce,ze=Fn({get:We,set:Ft});Object.defineProperty(r,V,{enumerable:!0,configurable:!0,get:()=&gt;ze.value,set:he=&gt;ze.value=he})}if(o)for(const V in o)dn(o[V],r,s,V);if(c){const V=I(c)?c.call(s):c;Reflect.ownKeys(V).forEach(B=&gt;{ti(B,V[B])})}d&amp;&amp;ir(d,e,&quot;c&quot;);function te(V,B){A(B)?B.forEach(We=&gt;V(We.bind(s))):B&amp;&amp;V(B.bind(s))}if(te(Da,h),te(fn,C),te(Ha,S),te(Ba,F),te(Fa,j),te(La,J),te(Ka,Le),te(Va,Fe),te(qa,pe),te(Na,W),te(Ks,R),te(Ua,It),A(Ke))if(Ke.length){const V=e.exposed||(e.exposed={});Ke.forEach(B=&gt;{Object.defineProperty(V,B,{get:()=&gt;s[B],set:We=&gt;s[B]=We,enumerable:!0})})}else e.exposed||(e.exposed={});Y&amp;&amp;e.render===Ce&amp;&amp;(e.render=Y),ft!=null&amp;&amp;(e.inheritAttrs=ft),Mt&amp;&amp;(e.components=Mt),jt&amp;&amp;(e.directives=jt),It&amp;&amp;ln(e)}function Ga(e,t,s=Ce){A(e)&amp;&amp;(e=Ts(e));for(const r in e){const n=e[r];let a;K(n)?&quot;default&quot;in n?a=Bt(n.from||r,n.default,!0):a=Bt(n.from||r):a=Bt(n),Z(a)?Object.defineProperty(t,r,{enumerable:!0,configurable:!0,get:()=&gt;a.value,set:i=&gt;a.value=i}):t[r]=a}}function ir(e,t,s){Ee(A(e)?e.map(r=&gt;r.bind(t.proxy)):e.bind(t.proxy),t,s)}function dn(e,t,s,r){let n=r.includes(&quot;.&quot;)?En(s,r):()=&gt;s[r];if(k(e)){const a=t[e];I(a)&amp;&amp;ms(n,a)}else if(I(e))ms(n,e.bind(s));else if(K(e))if(A(e))e.forEach(a=&gt;dn(a,t,s,r));else{const a=I(e.handler)?e.handler.bind(s):t[e.handler];I(a)&amp;&amp;ms(n,a,e)}}function un(e){const t=e.type,{mixins:s,extends:r}=t,{mixins:n,optionsCache:a,config:{optionMergeStrategies:i}}=e.appContext,o=a.get(t);let c;return o?c=o:!n.length&amp;&amp;!s&amp;&amp;!r?c=t:(c={},n.length&amp;&amp;n.forEach(p=&gt;kt(c,p,i,!0)),kt(c,t,i)),K(t)&amp;&amp;a.set(t,c),c}function kt(e,t,s,r=!1){const{mixins:n,extends:a}=t;a&amp;&amp;kt(e,a,s,!0),n&amp;&amp;n.forEach(i=&gt;kt(e,i,s,!0));for(const i in t)if(!(r&amp;&amp;i===&quot;expose&quot;)){const o=Ja[i]||s&amp;&amp;s[i];e[i]=o?o(e[i],t[i]):t[i]}return e}const Ja={data:lr,props:or,emits:or,methods:mt,computed:mt,beforeCreate:se,created:se,beforeMount:se,mounted:se,beforeUpdate:se,updated:se,beforeDestroy:se,beforeUnmount:se,destroyed:se,unmounted:se,activated:se,deactivated:se,errorCaptured:se,serverPrefetch:se,components:mt,directives:mt,watch:Qa,provide:lr,inject:Xa};function lr(e,t){return t?e?function(){return ee(I(e)?e.call(this,this):e,I(t)?t.call(this,this):t)}:t:e}function Xa(e,t){return mt(Ts(e),Ts(t))}function Ts(e){if(A(e)){const t={};for(let s=0;s&lt;e.length;s++)t[e[s]]=e[s];return t}return e}function se(e,t){return e?[...new Set([].concat(e,t))]:t}function mt(e,t){return e?ee(Object.create(null),e,t):t}function or(e,t){return e?A(e)&amp;&amp;A(t)?[...new Set([...e,...t])]:ee(Object.create(null),ar(e),ar(t??{})):t}function Qa(e,t){if(!e)return t;if(!t)return e;const s=ee(Object.create(null),e);for(const r in t)s[r]=se(e[r],t[r]);return s}function pn(){return{app:null,config:{isNativeTag:Nn,performance:!1,globalProperties:{},optionMergeStrategies:{},errorHandler:void 0,warnHandler:void 0,compilerOptions:{}},mixins:[],components:{},directives:{},provides:Object.create(null),optionsCache:new WeakMap,propsCache:new WeakMap,emitsCache:new WeakMap}}let Za=0;function ei(e,t){return function(r,n=null){I(r)||(r=ee({},r)),n!=null&amp;&amp;!K(n)&amp;&amp;(n=null);const a=pn(),i=new WeakSet,o=[];let c=!1;const p=a.app={_uid:Za++,_component:r,_props:n,_container:null,_context:a,_instance:null,version:Di,get config(){return a.config},set config(d){},use(d,...h){return i.has(d)||(d&amp;&amp;I(d.install)?(i.add(d),d.install(p,...h)):I(d)&amp;&amp;(i.add(d),d(p,...h))),p},mixin(d){return a.mixins.includes(d)||a.mixins.push(d),p},component(d,h){return h?(a.components[d]=h,p):a.components[d]},directive(d,h){return h?(a.directives[d]=h,p):a.directives[d]},mount(d,h,C){if(!c){const S=p._ceVNode||Q(r,n);return S.appContext=a,C===!0?C=&quot;svg&quot;:C===!1&amp;&amp;(C=void 0),e(S,d,C),c=!0,p._container=d,d.__vue_app__=p,Ys(S.component)}},onUnmount(d){o.push(d)},unmount(){c&amp;&amp;(Ee(o,p._instance,16),e(null,p._container),delete p._container.__vue_app__)},provide(d,h){return a.provides[d]=h,p},runWithContext(d){const h=lt;lt=p;try{return d()}finally{lt=h}}};return p}}let lt=null;function ti(e,t){if(ne){let s=ne.provides;const r=ne.parent&amp;&amp;ne.parent.provides;r===s&amp;&amp;(s=ne.provides=Object.create(r)),s[e]=t}}function Bt(e,t,s=!1){const r=Ii();if(r||lt){let n=lt?lt._context.provides:r?r.parent==null||r.ce?r.vnode.appContext&amp;&amp;r.vnode.appContext.provides:r.parent.provides:void 0;if(n&amp;&amp;e in n)return n[e];if(arguments.length&gt;1)return s&amp;&amp;I(t)?t.call(r&amp;&amp;r.proxy):t}}const hn={},gn=()=&gt;Object.create(hn),mn=e=&gt;Object.getPrototypeOf(e)===hn;function si(e,t,s,r=!1){const n={},a=gn();e.propsDefaults=Object.create(null),vn(e,t,n,a);for(const i in e.propsOptions[0])i in n||(n[i]=void 0);s?e.props=r?n:xa(n):e.type.props?e.props=n:e.props=a,e.attrs=a}function ri(e,t,s,r){const{props:n,attrs:a,vnode:{patchFlag:i}}=e,o=L(n),[c]=e.propsOptions;let p=!1;if((r||i&gt;0)&amp;&amp;!(i&amp;16)){if(i&amp;8){const d=e.vnode.dynamicProps;for(let h=0;h&lt;d.length;h++){let C=d[h];if(rs(e.emitsOptions,C))continue;const S=t[C];if(c)if($(a,C))S!==a[C]&amp;&amp;(a[C]=S,p=!0);else{const F=Ne(C);n[F]=Rs(c,o,F,S,e,!1)}else S!==a[C]&amp;&amp;(a[C]=S,p=!0)}}}else{vn(e,t,n,a)&amp;&amp;(p=!0);let d;for(const h in o)(!t||!$(t,h)&amp;&amp;((d=Qe(h))===h||!$(t,d)))&amp;&amp;(c?s&amp;&amp;(s[h]!==void 0||s[d]!==void 0)&amp;&amp;(n[h]=Rs(c,o,h,void 0,e,!0)):delete n[h]);if(a!==o)for(const h in a)(!t||!$(t,h))&amp;&amp;(delete a[h],p=!0)}p&amp;&amp;Ae(e.attrs,&quot;set&quot;,&quot;&quot;)}function vn(e,t,s,r){const[n,a]=e.propsOptions;let i=!1,o;if(t)for(let c in t){if(vt(c))continue;const p=t[c];let d;n&amp;&amp;$(n,d=Ne(c))?!a||!a.includes(d)?s[d]=p:(o||(o={}))[d]=p:rs(e.emitsOptions,c)||(!(c in r)||p!==r[c])&amp;&amp;(r[c]=p,i=!0)}if(a){const c=L(s),p=o||q;for(let d=0;d&lt;a.length;d++){const h=a[d];s[h]=Rs(n,c,h,p[h],e,!$(p,h))}}return i}function Rs(e,t,s,r,n,a){const i=e[s];if(i!=null){const o=$(i,&quot;default&quot;);if(o&amp;&amp;r===void 0){const c=i.default;if(i.type!==Function&amp;&amp;!i.skipFactory&amp;&amp;I(c)){const{propsDefaults:p}=n;if(s in p)r=p[s];else{const d=Ot(n);r=p[s]=c.call(null,t),d()}}else r=c;n.ce&amp;&amp;n.ce._setProp(s,r)}i[0]&amp;&amp;(a&amp;&amp;!o?r=!1:i[1]&amp;&amp;(r===&quot;&quot;||r===Qe(s))&amp;&amp;(r=!0))}return r}const ni=new WeakMap;function xn(e,t,s=!1){const r=s?ni:t.propsCache,n=r.get(e);if(n)return n;const a=e.props,i={},o=[];let c=!1;if(!I(e)){const d=h=&gt;{c=!0;const[C,S]=xn(h,t,!0);ee(i,C),S&amp;&amp;o.push(...S)};!s&amp;&amp;t.mixins.length&amp;&amp;t.mixins.forEach(d),e.extends&amp;&amp;d(e.extends),e.mixins&amp;&amp;e.mixins.forEach(d)}if(!a&amp;&amp;!c)return K(e)&amp;&amp;r.set(e,rt),rt;if(A(a))for(let d=0;d&lt;a.length;d++){const h=Ne(a[d]);cr(h)&amp;&amp;(i[h]=q)}else if(a)for(const d in a){const h=Ne(d);if(cr(h)){const C=a[d],S=i[h]=A(C)||I(C)?{type:C}:ee({},C),F=S.type;let j=!1,J=!0;if(A(F))for(let H=0;H&lt;F.length;++H){const W=F[H],z=I(W)&amp;&amp;W.name;if(z===&quot;Boolean&quot;){j=!0;break}else z===&quot;String&quot;&amp;&amp;(J=!1)}else j=I(F)&amp;&amp;F.name===&quot;Boolean&quot;;S[0]=j,S[1]=J,(j||$(S,&quot;default&quot;))&amp;&amp;o.push(h)}}const p=[i,o];return K(e)&amp;&amp;r.set(e,p),p}function cr(e){return e[0]!==&quot;$&quot;&amp;&amp;!vt(e)}const Ws=e=&gt;e===&quot;_&quot;||e===&quot;__&quot;||e===&quot;_ctx&quot;||e===&quot;$stable&quot;,zs=e=&gt;A(e)?e.map(ye):[ye(e)],ai=(e,t,s)=&gt;{if(t._n)return t;const r=Ia((...n)=&gt;zs(t(...n)),s);return r._c=!1,r},bn=(e,t,s)=&gt;{const r=e._ctx;for(const n in e){if(Ws(n))continue;const a=e[n];if(I(a))t[n]=ai(n,a,r);else if(a!=null){const i=zs(a);t[n]=()=&gt;i}}},_n=(e,t)=&gt;{const s=zs(t);e.slots.default=()=&gt;s},yn=(e,t,s)=&gt;{for(const r in t)(s||!Ws(r))&amp;&amp;(e[r]=t[r])},ii=(e,t,s)=&gt;{const r=e.slots=gn();if(e.vnode.shapeFlag&amp;32){const n=t.__;n&amp;&amp;bs(r,&quot;__&quot;,n,!0);const a=t._;a?(yn(r,t,s),s&amp;&amp;bs(r,&quot;_&quot;,a,!0)):bn(t,r)}else t&amp;&amp;_n(e,t)},li=(e,t,s)=&gt;{const{vnode:r,slots:n}=e;let a=!0,i=q;if(r.shapeFlag&amp;32){const o=t._;o?s&amp;&amp;o===1?a=!1:yn(n,t,s):(a=!t.$stable,bn(t,n)),i=t}else t&amp;&amp;(_n(e,t),i={default:1});if(a)for(const o in n)!Ws(o)&amp;&amp;i[o]==null&amp;&amp;delete n[o]},ce=yi;function oi(e){return ci(e)}function ci(e,t){const s=Qt();s.__VUE__=!0;const{insert:r,remove:n,patchProp:a,createElement:i,createText:o,createComment:c,setText:p,setElementText:d,parentNode:h,nextSibling:C,setScopeId:S=Ce,insertStaticContent:F}=e,j=(l,f,u,v=null,g=null,m=null,y=void 0,_=null,b=!!f.dynamicChildren)=&gt;{if(l===f)return;l&amp;&amp;!gt(l,f)&amp;&amp;(v=Lt(l),he(l,g,m,!0),l=null),f.patchFlag===-2&amp;&amp;(b=!1,f.dynamicChildren=null);const{type:x,ref:T,shapeFlag:w}=f;switch(x){case ns:J(l,f,u,v);break;case qe:H(l,f,u,v);break;case Nt:l==null&amp;&amp;W(f,u,v,y);break;case _e:Mt(l,f,u,v,g,m,y,_,b);break;default:w&amp;1?Y(l,f,u,v,g,m,y,_,b):w&amp;6?jt(l,f,u,v,g,m,y,_,b):(w&amp;64||w&amp;128)&amp;&amp;x.process(l,f,u,v,g,m,y,_,b,ut)}T!=null&amp;&amp;g?_t(T,l&amp;&amp;l.ref,m,f||l,!f):T==null&amp;&amp;l&amp;&amp;l.ref!=null&amp;&amp;_t(l.ref,null,m,l,!0)},J=(l,f,u,v)=&gt;{if(l==null)r(f.el=o(f.children),u,v);else{const g=f.el=l.el;f.children!==l.children&amp;&amp;p(g,f.children)}},H=(l,f,u,v)=&gt;{l==null?r(f.el=c(f.children||&quot;&quot;),u,v):f.el=l.el},W=(l,f,u,v)=&gt;{[l.el,l.anchor]=F(l.children,f,u,v,l.el,l.anchor)},z=({el:l,anchor:f},u,v)=&gt;{let g;for(;l&amp;&amp;l!==f;)g=C(l),r(l,u,v),l=g;r(f,u,v)},R=({el:l,anchor:f})=&gt;{let u;for(;l&amp;&amp;l!==f;)u=C(l),n(l),l=u;n(f)},Y=(l,f,u,v,g,m,y,_,b)=&gt;{f.type===&quot;svg&quot;?y=&quot;svg&quot;:f.type===&quot;math&quot;&amp;&amp;(y=&quot;mathml&quot;),l==null?Fe(f,u,v,g,m,y,_,b):It(l,f,g,m,y,_,b)},Fe=(l,f,u,v,g,m,y,_)=&gt;{let b,x;const{props:T,shapeFlag:w,transition:E,dirs:P}=l;if(b=l.el=i(l.type,m,T&amp;&amp;T.is,T),w&amp;8?d(b,l.children):w&amp;16&amp;&amp;Le(l.children,b,null,v,g,gs(l,m),y,_),P&amp;&amp;ke(l,null,v,&quot;created&quot;),pe(b,l,l.scopeId,y,v),T){for(const N in T)N!==&quot;value&quot;&amp;&amp;!vt(N)&amp;&amp;a(b,N,null,T[N],m,v);&quot;value&quot;in T&amp;&amp;a(b,&quot;value&quot;,null,T.value,m),(x=T.onVnodeBeforeMount)&amp;&amp;xe(x,v,l)}P&amp;&amp;ke(l,null,v,&quot;beforeMount&quot;);const M=fi(g,E);M&amp;&amp;E.beforeEnter(b),r(b,f,u),((x=T&amp;&amp;T.onVnodeMounted)||M||P)&amp;&amp;ce(()=&gt;{x&amp;&amp;xe(x,v,l),M&amp;&amp;E.enter(b),P&amp;&amp;ke(l,null,v,&quot;mounted&quot;)},g)},pe=(l,f,u,v,g)=&gt;{if(u&amp;&amp;S(l,u),v)for(let m=0;m&lt;v.length;m++)S(l,v[m]);if(g){let m=g.subTree;if(f===m||Rn(m.type)&amp;&amp;(m.ssContent===f||m.ssFallback===f)){const y=g.vnode;pe(l,y,y.scopeId,y.slotScopeIds,g.parent)}}},Le=(l,f,u,v,g,m,y,_,b=0)=&gt;{for(let x=b;x&lt;l.length;x++){const T=l[x]=_?De(l[x]):ye(l[x]);j(null,T,f,u,v,g,m,y,_)}},It=(l,f,u,v,g,m,y)=&gt;{const _=f.el=l.el;let{patchFlag:b,dynamicChildren:x,dirs:T}=f;b|=l.patchFlag&amp;16;const w=l.props||q,E=f.props||q;let P;if(u&amp;&amp;Ye(u,!1),(P=E.onVnodeBeforeUpdate)&amp;&amp;xe(P,u,f,l),T&amp;&amp;ke(f,l,u,&quot;beforeUpdate&quot;),u&amp;&amp;Ye(u,!0),(w.innerHTML&amp;&amp;E.innerHTML==null||w.textContent&amp;&amp;E.textContent==null)&amp;&amp;d(_,&quot;&quot;),x?Ke(l.dynamicChildren,x,_,u,v,gs(f,g),m):y||B(l,f,_,null,u,v,gs(f,g),m,!1),b&gt;0){if(b&amp;16)ft(_,w,E,u,g);else if(b&amp;2&amp;&amp;w.class!==E.class&amp;&amp;a(_,&quot;class&quot;,null,E.class,g),b&amp;4&amp;&amp;a(_,&quot;style&quot;,w.style,E.style,g),b&amp;8){const M=f.dynamicProps;for(let N=0;N&lt;M.length;N++){const D=M[N],ae=w[D],ie=E[D];(ie!==ae||D===&quot;value&quot;)&amp;&amp;a(_,D,ae,ie,g,u)}}b&amp;1&amp;&amp;l.children!==f.children&amp;&amp;d(_,f.children)}else!y&amp;&amp;x==null&amp;&amp;ft(_,w,E,u,g);((P=E.onVnodeUpdated)||T)&amp;&amp;ce(()=&gt;{P&amp;&amp;xe(P,u,f,l),T&amp;&amp;ke(f,l,u,&quot;updated&quot;)},v)},Ke=(l,f,u,v,g,m,y)=&gt;{for(let _=0;_&lt;f.length;_++){const b=l[_],x=f[_],T=b.el&amp;&amp;(b.type===_e||!gt(b,x)||b.shapeFlag&amp;198)?h(b.el):u;j(b,x,T,null,v,g,m,y,!0)}},ft=(l,f,u,v,g)=&gt;{if(f!==u){if(f!==q)for(const m in f)!vt(m)&amp;&amp;!(m in u)&amp;&amp;a(l,m,f[m],null,g,v);for(const m in u){if(vt(m))continue;const y=u[m],_=f[m];y!==_&amp;&amp;m!==&quot;value&quot;&amp;&amp;a(l,m,_,y,g,v)}&quot;value&quot;in u&amp;&amp;a(l,&quot;value&quot;,f.value,u.value,g)}},Mt=(l,f,u,v,g,m,y,_,b)=&gt;{const x=f.el=l?l.el:o(&quot;&quot;),T=f.anchor=l?l.anchor:o(&quot;&quot;);let{patchFlag:w,dynamicChildren:E,slotScopeIds:P}=f;P&amp;&amp;(_=_?_.concat(P):P),l==null?(r(x,u,v),r(T,u,v),Le(f.children||[],u,T,g,m,y,_,b)):w&gt;0&amp;&amp;w&amp;64&amp;&amp;E&amp;&amp;l.dynamicChildren?(Ke(l.dynamicChildren,E,u,g,m,y,_),(f.key!=null||g&amp;&amp;f===g.subTree)&amp;&amp;wn(l,f,!0)):B(l,f,u,T,g,m,y,_,b)},jt=(l,f,u,v,g,m,y,_,b)=&gt;{f.slotScopeIds=_,l==null?f.shapeFlag&amp;512?g.ctx.activate(f,u,v,y,b):as(f,u,v,g,m,y,b):Gs(l,f,b)},as=(l,f,u,v,g,m,y)=&gt;{const _=l.component=Oi(l,v,g);if(on(l)&amp;&amp;(_.ctx.renderer=ut),Mi(_,!1,y),_.asyncDep){if(g&amp;&amp;g.registerDep(_,te,y),!l.el){const b=_.subTree=Q(qe);H(null,b,f,u),l.placeholder=b.el}}else te(_,l,f,u,g,m,y)},Gs=(l,f,u)=&gt;{const v=f.component=l.component;if(bi(l,f,u))if(v.asyncDep&amp;&amp;!v.asyncResolved){V(v,f,u);return}else v.next=f,v.update();else f.el=l.el,v.vnode=f},te=(l,f,u,v,g,m,y)=&gt;{const _=()=&gt;{if(l.isMounted){let{next:w,bu:E,u:P,parent:M,vnode:N}=l;{const me=Cn(l);if(me){w&amp;&amp;(w.el=N.el,V(l,w,y)),me.asyncDep.then(()=&gt;{l.isUnmounted||_()});return}}let D=w,ae;Ye(l,!1),w?(w.el=N.el,V(l,w,y)):w=N,E&amp;&amp;os(E),(ae=w.props&amp;&amp;w.props.onVnodeBeforeUpdate)&amp;&amp;xe(ae,M,w,N),Ye(l,!0);const ie=dr(l),ge=l.subTree;l.subTree=ie,j(ge,ie,h(ge.el),Lt(ge),l,g,m),w.el=ie.el,D===null&amp;&amp;_i(l,ie.el),P&amp;&amp;ce(P,g),(ae=w.props&amp;&amp;w.props.onVnodeUpdated)&amp;&amp;ce(()=&gt;xe(ae,M,w,N),g)}else{let w;const{el:E,props:P}=f,{bm:M,m:N,parent:D,root:ae,type:ie}=l,ge=yt(f);Ye(l,!1),M&amp;&amp;os(M),!ge&amp;&amp;(w=P&amp;&amp;P.onVnodeBeforeMount)&amp;&amp;xe(w,D,f),Ye(l,!0);{ae.ce&amp;&amp;ae.ce._def.shadowRoot!==!1&amp;&amp;ae.ce._injectChildStyle(ie);const me=l.subTree=dr(l);j(null,me,u,v,l,g,m),f.el=me.el}if(N&amp;&amp;ce(N,g),!ge&amp;&amp;(w=P&amp;&amp;P.onVnodeMounted)){const me=f;ce(()=&gt;xe(w,D,me),g)}(f.shapeFlag&amp;256||D&amp;&amp;yt(D.vnode)&amp;&amp;D.vnode.shapeFlag&amp;256)&amp;&amp;l.a&amp;&amp;ce(l.a,g),l.isMounted=!0,f=u=v=null}};l.scope.on();const b=l.effect=new Br(_);l.scope.off();const x=l.update=b.run.bind(b),T=l.job=b.runIfDirty.bind(b);T.i=l,T.id=l.uid,b.scheduler=()=&gt;qs(T),Ye(l,!0),x()},V=(l,f,u)=&gt;{f.component=l;const v=l.vnode.props;l.vnode=f,l.next=null,ri(l,f.props,v,u),li(l,f.children,u),Ie(),nr(l),Me()},B=(l,f,u,v,g,m,y,_,b=!1)=&gt;{const x=l&amp;&amp;l.children,T=l?l.shapeFlag:0,w=f.children,{patchFlag:E,shapeFlag:P}=f;if(E&gt;0){if(E&amp;128){Ft(x,w,u,v,g,m,y,_,b);return}else if(E&amp;256){We(x,w,u,v,g,m,y,_,b);return}}P&amp;8?(T&amp;16&amp;&amp;dt(x,g,m),w!==x&amp;&amp;d(u,w)):T&amp;16?P&amp;16?Ft(x,w,u,v,g,m,y,_,b):dt(x,g,m,!0):(T&amp;8&amp;&amp;d(u,&quot;&quot;),P&amp;16&amp;&amp;Le(w,u,v,g,m,y,_,b))},We=(l,f,u,v,g,m,y,_,b)=&gt;{l=l||rt,f=f||rt;const x=l.length,T=f.length,w=Math.min(x,T);let E;for(E=0;E&lt;w;E++){const P=f[E]=b?De(f[E]):ye(f[E]);j(l[E],P,u,null,g,m,y,_,b)}x&gt;T?dt(l,g,m,!0,!1,w):Le(f,u,v,g,m,y,_,b,w)},Ft=(l,f,u,v,g,m,y,_,b)=&gt;{let x=0;const T=f.length;let w=l.length-1,E=T-1;for(;x&lt;=w&amp;&amp;x&lt;=E;){const P=l[x],M=f[x]=b?De(f[x]):ye(f[x]);if(gt(P,M))j(P,M,u,null,g,m,y,_,b);else break;x++}for(;x&lt;=w&amp;&amp;x&lt;=E;){const P=l[w],M=f[E]=b?De(f[E]):ye(f[E]);if(gt(P,M))j(P,M,u,null,g,m,y,_,b);else break;w--,E--}if(x&gt;w){if(x&lt;=E){const P=E+1,M=P&lt;T?f[P].el:v;for(;x&lt;=E;)j(null,f[x]=b?De(f[x]):ye(f[x]),u,M,g,m,y,_,b),x++}}else if(x&gt;E)for(;x&lt;=w;)he(l[x],g,m,!0),x++;else{const P=x,M=x,N=new Map;for(x=M;x&lt;=E;x++){const oe=f[x]=b?De(f[x]):ye(f[x]);oe.key!=null&amp;&amp;N.set(oe.key,x)}let D,ae=0;const ie=E-M+1;let ge=!1,me=0;const pt=new Array(ie);for(x=0;x&lt;ie;x++)pt[x]=0;for(x=P;x&lt;=w;x++){const oe=l[x];if(ae&gt;=ie){he(oe,g,m,!0);continue}let ve;if(oe.key!=null)ve=N.get(oe.key);else for(D=M;D&lt;=E;D++)if(pt[D-M]===0&amp;&amp;gt(oe,f[D])){ve=D;break}ve===void 0?he(oe,g,m,!0):(pt[ve-M]=x+1,ve&gt;=me?me=ve:ge=!0,j(oe,f[ve],u,null,g,m,y,_,b),ae++)}const Qs=ge?di(pt):rt;for(D=Qs.length-1,x=ie-1;x&gt;=0;x--){const oe=M+x,ve=f[oe],Zs=f[oe+1],er=oe+1&lt;T?Zs.el||Zs.placeholder:v;pt[x]===0?j(null,ve,u,er,g,m,y,_,b):ge&amp;&amp;(D&lt;0||x!==Qs[D]?ze(ve,u,er,2):D--)}}},ze=(l,f,u,v,g=null)=&gt;{const{el:m,type:y,transition:_,children:b,shapeFlag:x}=l;if(x&amp;6){ze(l.component.subTree,f,u,v);return}if(x&amp;128){l.suspense.move(f,u,v);return}if(x&amp;64){y.move(l,f,u,ut);return}if(y===_e){r(m,f,u);for(let w=0;w&lt;b.length;w++)ze(b[w],f,u,v);r(l.anchor,f,u);return}if(y===Nt){z(l,f,u);return}if(v!==2&amp;&amp;x&amp;1&amp;&amp;_)if(v===0)_.beforeEnter(m),r(m,f,u),ce(()=&gt;_.enter(m),g);else{const{leave:w,delayLeave:E,afterLeave:P}=_,M=()=&gt;{l.ctx.isUnmounted?n(m):r(m,f,u)},N=()=&gt;{w(m,()=&gt;{M(),P&amp;&amp;P()})};E?E(m,M,N):N()}else r(m,f,u)},he=(l,f,u,v=!1,g=!1)=&gt;{const{type:m,props:y,ref:_,children:b,dynamicChildren:x,shapeFlag:T,patchFlag:w,dirs:E,cacheIndex:P}=l;if(w===-2&amp;&amp;(g=!1),_!=null&amp;&amp;(Ie(),_t(_,null,u,l,!0),Me()),P!=null&amp;&amp;(f.renderCache[P]=void 0),T&amp;256){f.ctx.deactivate(l);return}const M=T&amp;1&amp;&amp;E,N=!yt(l);let D;if(N&amp;&amp;(D=y&amp;&amp;y.onVnodeBeforeUnmount)&amp;&amp;xe(D,f,l),T&amp;6)Bn(l.component,u,v);else{if(T&amp;128){l.suspense.unmount(u,v);return}M&amp;&amp;ke(l,null,f,&quot;beforeUnmount&quot;),T&amp;64?l.type.remove(l,f,u,ut,v):x&amp;&amp;!x.hasOnce&amp;&amp;(m!==_e||w&gt;0&amp;&amp;w&amp;64)?dt(x,f,u,!1,!0):(m===_e&amp;&amp;w&amp;384||!g&amp;&amp;T&amp;16)&amp;&amp;dt(b,f,u),v&amp;&amp;Js(l)}(N&amp;&amp;(D=y&amp;&amp;y.onVnodeUnmounted)||M)&amp;&amp;ce(()=&gt;{D&amp;&amp;xe(D,f,l),M&amp;&amp;ke(l,null,f,&quot;unmounted&quot;)},u)},Js=l=&gt;{const{type:f,el:u,anchor:v,transition:g}=l;if(f===_e){Hn(u,v);return}if(f===Nt){R(l);return}const m=()=&gt;{n(u),g&amp;&amp;!g.persisted&amp;&amp;g.afterLeave&amp;&amp;g.afterLeave()};if(l.shapeFlag&amp;1&amp;&amp;g&amp;&amp;!g.persisted){const{leave:y,delayLeave:_}=g,b=()=&gt;y(u,m);_?_(l.el,m,b):b()}else m()},Hn=(l,f)=&gt;{let u;for(;l!==f;)u=C(l),n(l),l=u;n(f)},Bn=(l,f,u)=&gt;{const{bum:v,scope:g,job:m,subTree:y,um:_,m:b,a:x,parent:T,slots:{__:w}}=l;fr(b),fr(x),v&amp;&amp;os(v),T&amp;&amp;A(w)&amp;&amp;w.forEach(E=&gt;{T.renderCache[E]=void 0}),g.stop(),m&amp;&amp;(m.flags|=8,he(y,l,f,u)),_&amp;&amp;ce(_,f),ce(()=&gt;{l.isUnmounted=!0},f),f&amp;&amp;f.pendingBranch&amp;&amp;!f.isUnmounted&amp;&amp;l.asyncDep&amp;&amp;!l.asyncResolved&amp;&amp;l.suspenseId===f.pendingId&amp;&amp;(f.deps--,f.deps===0&amp;&amp;f.resolve())},dt=(l,f,u,v=!1,g=!1,m=0)=&gt;{for(let y=m;y&lt;l.length;y++)he(l[y],f,u,v,g)},Lt=l=&gt;{if(l.shapeFlag&amp;6)return Lt(l.component.subTree);if(l.shapeFlag&amp;128)return l.suspense.next();const f=C(l.anchor||l.el),u=f&amp;&amp;f[Ma];return u?C(u):f};let is=!1;const Xs=(l,f,u)=&gt;{l==null?f._vnode&amp;&amp;he(f._vnode,null,null,!0):j(f._vnode||null,l,f,null,null,null,u),f._vnode=l,is||(is=!0,nr(),rn(),is=!1)},ut={p:j,um:he,m:ze,r:Js,mt:as,mc:Le,pc:B,pbc:Ke,n:Lt,o:e};return{render:Xs,hydrate:void 0,createApp:ei(Xs)}}function gs({type:e,props:t},s){return s===&quot;svg&quot;&amp;&amp;e===&quot;foreignObject&quot;||s===&quot;mathml&quot;&amp;&amp;e===&quot;annotation-xml&quot;&amp;&amp;t&amp;&amp;t.encoding&amp;&amp;t.encoding.includes(&quot;html&quot;)?void 0:s}function Ye({effect:e,job:t},s){s?(e.flags|=32,t.flags|=4):(e.flags&amp;=-33,t.flags&amp;=-5)}function fi(e,t){return(!e||e&amp;&amp;!e.pendingBranch)&amp;&amp;t&amp;&amp;!t.persisted}function wn(e,t,s=!1){const r=e.children,n=t.children;if(A(r)&amp;&amp;A(n))for(let a=0;a&lt;r.length;a++){const i=r[a];let o=n[a];o.shapeFlag&amp;1&amp;&amp;!o.dynamicChildren&amp;&amp;((o.patchFlag&lt;=0||o.patchFlag===32)&amp;&amp;(o=n[a]=De(n[a]),o.el=i.el),!s&amp;&amp;o.patchFlag!==-2&amp;&amp;wn(i,o)),o.type===ns&amp;&amp;(o.el=i.el),o.type===qe&amp;&amp;!o.el&amp;&amp;(o.el=i.el)}}function di(e){const t=e.slice(),s=[0];let r,n,a,i,o;const c=e.length;for(r=0;r&lt;c;r++){const p=e[r];if(p!==0){if(n=s[s.length-1],e[n]&lt;p){t[r]=n,s.push(r);continue}for(a=0,i=s.length-1;a&lt;i;)o=a+i&gt;&gt;1,e[s[o]]&lt;p?a=o+1:i=o;p&lt;e[s[a]]&amp;&amp;(a&gt;0&amp;&amp;(t[r]=s[a-1]),s[a]=r)}}for(a=s.length,i=s[a-1];a-- &gt;0;)s[a]=i,i=t[i];return s}function Cn(e){const t=e.subTree.component;if(t)return t.asyncDep&amp;&amp;!t.asyncResolved?t:Cn(t)}function fr(e){if(e)for(let t=0;t&lt;e.length;t++)e[t].flags|=8}const ui=Symbol.for(&quot;v-scx&quot;),pi=()=&gt;Bt(ui);function ms(e,t,s){return Sn(e,t,s)}function Sn(e,t,s=q){const{immediate:r,deep:n,flush:a,once:i}=s,o=ee({},s),c=t&amp;&amp;r||!t&amp;&amp;a!==&quot;post&quot;;let p;if(Pt){if(a===&quot;sync&quot;){const S=pi();p=S.__watcherHandles||(S.__watcherHandles=[])}else if(!c){const S=()=&gt;{};return S.stop=Ce,S.resume=Ce,S.pause=Ce,S}}const d=ne;o.call=(S,F,j)=&gt;Ee(S,d,F,j);let h=!1;a===&quot;post&quot;?o.scheduler=S=&gt;{ce(S,d&amp;&amp;d.suspense)}:a!==&quot;sync&quot;&amp;&amp;(h=!0,o.scheduler=(S,F)=&gt;{F?S():qs(S)}),o.augmentJob=S=&gt;{t&amp;&amp;(S.flags|=4),h&amp;&amp;(S.flags|=2,d&amp;&amp;(S.id=d.uid,S.i=d))};const C=Ta(e,t,o);return Pt&amp;&amp;(p?p.push(C):c&amp;&amp;C()),C}function hi(e,t,s){const r=this.proxy,n=k(e)?e.includes(&quot;.&quot;)?En(r,e):()=&gt;r[e]:e.bind(r,r);let a;I(t)?a=t:(a=t.handler,s=t);const i=Ot(this),o=Sn(n,a.bind(r),s);return i(),o}function En(e,t){const s=t.split(&quot;.&quot;);return()=&gt;{let r=e;for(let n=0;n&lt;s.length&amp;&amp;r;n++)r=r[s[n]];return r}}const gi=(e,t)=&gt;t===&quot;modelValue&quot;||t===&quot;model-value&quot;?e.modelModifiers:e[`${t}Modifiers`]||e[`${Ne(t)}Modifiers`]||e[`${Qe(t)}Modifiers`];function mi(e,t,...s){if(e.isUnmounted)return;const r=e.vnode.props||q;let n=s;const a=t.startsWith(&quot;update:&quot;),i=a&amp;&amp;gi(r,t.slice(7));i&amp;&amp;(i.trim&amp;&amp;(n=s.map(d=&gt;k(d)?d.trim():d)),i.number&amp;&amp;(n=s.map(Wn)));let o,c=r[o=ls(t)]||r[o=ls(Ne(t))];!c&amp;&amp;a&amp;&amp;(c=r[o=ls(Qe(t))]),c&amp;&amp;Ee(c,e,6,n);const p=r[o+&quot;Once&quot;];if(p){if(!e.emitted)e.emitted={};else if(e.emitted[o])return;e.emitted[o]=!0,Ee(p,e,6,n)}}function Tn(e,t,s=!1){const r=t.emitsCache,n=r.get(e);if(n!==void 0)return n;const a=e.emits;let i={},o=!1;if(!I(e)){const c=p=&gt;{const d=Tn(p,t,!0);d&amp;&amp;(o=!0,ee(i,d))};!s&amp;&amp;t.mixins.length&amp;&amp;t.mixins.forEach(c),e.extends&amp;&amp;c(e.extends),e.mixins&amp;&amp;e.mixins.forEach(c)}return!a&amp;&amp;!o?(K(e)&amp;&amp;r.set(e,null),null):(A(a)?a.forEach(c=&gt;i[c]=null):ee(i,a),K(e)&amp;&amp;r.set(e,i),i)}function rs(e,t){return!e||!Gt(t)?!1:(t=t.slice(2).replace(/Once$/,&quot;&quot;),$(e,t[0].toLowerCase()+t.slice(1))||$(e,Qe(t))||$(e,t))}function dr(e){const{type:t,vnode:s,proxy:r,withProxy:n,propsOptions:[a],slots:i,attrs:o,emit:c,render:p,renderCache:d,props:h,data:C,setupState:S,ctx:F,inheritAttrs:j}=e,J=zt(e);let H,W;try{if(s.shapeFlag&amp;4){const R=n||r,Y=R;H=ye(p.call(Y,R,d,h,S,C,F)),W=o}else{const R=t;H=ye(R.length&gt;1?R(h,{attrs:o,slots:i,emit:c}):R(h,null)),W=t.props?o:vi(o)}}catch(R){Ct.length=0,ts(R,e,1),H=Q(qe)}let z=H;if(W&amp;&amp;j!==!1){const R=Object.keys(W),{shapeFlag:Y}=z;R.length&amp;&amp;Y&amp;7&amp;&amp;(a&amp;&amp;R.some(Is)&amp;&amp;(W=xi(W,a)),z=ot(z,W,!1,!0))}return s.dirs&amp;&amp;(z=ot(z,null,!1,!0),z.dirs=z.dirs?z.dirs.concat(s.dirs):s.dirs),s.transition&amp;&amp;Vs(z,s.transition),H=z,zt(J),H}const vi=e=&gt;{let t;for(const s in e)(s===&quot;class&quot;||s===&quot;style&quot;||Gt(s))&amp;&amp;((t||(t={}))[s]=e[s]);return t},xi=(e,t)=&gt;{const s={};for(const r in e)(!Is(r)||!(r.slice(9)in t))&amp;&amp;(s[r]=e[r]);return s};function bi(e,t,s){const{props:r,children:n,component:a}=e,{props:i,children:o,patchFlag:c}=t,p=a.emitsOptions;if(t.dirs||t.transition)return!0;if(s&amp;&amp;c&gt;=0){if(c&amp;1024)return!0;if(c&amp;16)return r?ur(r,i,p):!!i;if(c&amp;8){const d=t.dynamicProps;for(let h=0;h&lt;d.length;h++){const C=d[h];if(i[C]!==r[C]&amp;&amp;!rs(p,C))return!0}}}else return(n||o)&amp;&amp;(!o||!o.$stable)?!0:r===i?!1:r?i?ur(r,i,p):!0:!!i;return!1}function ur(e,t,s){const r=Object.keys(t);if(r.length!==Object.keys(e).length)return!0;for(let n=0;n&lt;r.length;n++){const a=r[n];if(t[a]!==e[a]&amp;&amp;!rs(s,a))return!0}return!1}function _i({vnode:e,parent:t},s){for(;t;){const r=t.subTree;if(r.suspense&amp;&amp;r.suspense.activeBranch===e&amp;&amp;(r.el=e.el),r===e)(e=t.vnode).el=s,t=t.parent;else break}}const Rn=e=&gt;e.__isSuspense;function yi(e,t){t&amp;&amp;t.pendingBranch?A(e)?t.effects.push(...e):t.effects.push(e):Oa(e)}const _e=Symbol.for(&quot;v-fgt&quot;),ns=Symbol.for(&quot;v-txt&quot;),qe=Symbol.for(&quot;v-cmt&quot;),Nt=Symbol.for(&quot;v-stc&quot;),Ct=[];let fe=null;function Se(e=!1){Ct.push(fe=e?null:[])}function wi(){Ct.pop(),fe=Ct[Ct.length-1]||null}let Rt=1;function pr(e,t=!1){Rt+=e,e&lt;0&amp;&amp;fe&amp;&amp;t&amp;&amp;(fe.hasOnce=!0)}function Pn(e){return e.dynamicChildren=Rt&gt;0?fe||rt:null,wi(),Rt&gt;0&amp;&amp;fe&amp;&amp;fe.push(e),e}function Oe(e,t,s,r,n,a){return Pn(O(e,t,s,r,n,a,!0))}function Ci(e,t,s,r,n){return Pn(Q(e,t,s,r,n,!0))}function An(e){return e?e.__v_isVNode===!0:!1}function gt(e,t){return e.type===t.type&amp;&amp;e.key===t.key}const On=({key:e})=&gt;e??null,Ut=({ref:e,ref_key:t,ref_for:s})=&gt;(typeof e==&quot;number&quot;&amp;&amp;(e=&quot;&quot;+e),e!=null?k(e)||Z(e)||I(e)?{i:we,r:e,k:t,f:!!s}:e:null);function O(e,t=null,s=null,r=0,n=null,a=e===_e?0:1,i=!1,o=!1){const c={__v_isVNode:!0,__v_skip:!0,type:e,props:t,key:t&amp;&amp;On(t),ref:t&amp;&amp;Ut(t),scopeId:an,slotScopeIds:null,children:s,component:null,suspense:null,ssContent:null,ssFallback:null,dirs:null,transition:null,el:null,anchor:null,target:null,targetStart:null,targetAnchor:null,staticCount:0,shapeFlag:a,patchFlag:r,dynamicProps:n,dynamicChildren:null,appContext:null,ctx:we};return o?(ks(c,s),a&amp;128&amp;&amp;e.normalize(c)):s&amp;&amp;(c.shapeFlag|=k(s)?8:16),Rt&gt;0&amp;&amp;!i&amp;&amp;fe&amp;&amp;(c.patchFlag&gt;0||a&amp;6)&amp;&amp;c.patchFlag!==32&amp;&amp;fe.push(c),c}const Q=Si;function Si(e,t=null,s=null,r=0,n=null,a=!1){if((!e||e===Wa)&amp;&amp;(e=qe),An(e)){const o=ot(e,t,!0);return s&amp;&amp;ks(o,s),Rt&gt;0&amp;&amp;!a&amp;&amp;fe&amp;&amp;(o.shapeFlag&amp;6?fe[fe.indexOf(e)]=o:fe.push(o)),o.patchFlag=-2,o}if($i(e)&amp;&amp;(e=e.__vccOpts),t){t=Ei(t);let{class:o,style:c}=t;o&amp;&amp;!k(o)&amp;&amp;(t.class=Pe(o)),K(c)&amp;&amp;(Us(c)&amp;&amp;!A(c)&amp;&amp;(c=ee({},c)),t.style=Zt(c))}const i=k(e)?1:Rn(e)?128:ja(e)?64:K(e)?4:I(e)?2:0;return O(e,t,s,r,n,i,a,!0)}function Ei(e){return e?Us(e)||mn(e)?ee({},e):e:null}function ot(e,t,s=!1,r=!1){const{props:n,ref:a,patchFlag:i,children:o,transition:c}=e,p=t?Ri(n||{},t):n,d={__v_isVNode:!0,__v_skip:!0,type:e.type,props:p,key:p&amp;&amp;On(p),ref:t&amp;&amp;t.ref?s&amp;&amp;a?A(a)?a.concat(Ut(t)):[a,Ut(t)]:Ut(t):a,scopeId:e.scopeId,slotScopeIds:e.slotScopeIds,children:o,target:e.target,targetStart:e.targetStart,targetAnchor:e.targetAnchor,staticCount:e.staticCount,shapeFlag:e.shapeFlag,patchFlag:t&amp;&amp;e.type!==_e?i===-1?16:i|16:i,dynamicProps:e.dynamicProps,dynamicChildren:e.dynamicChildren,appContext:e.appContext,dirs:e.dirs,transition:c,component:e.component,suspense:e.suspense,ssContent:e.ssContent&amp;&amp;ot(e.ssContent),ssFallback:e.ssFallback&amp;&amp;ot(e.ssFallback),placeholder:e.placeholder,el:e.el,anchor:e.anchor,ctx:e.ctx,ce:e.ce};return c&amp;&amp;r&amp;&amp;Vs(d,c.clone(d)),d}function In(e=&quot; &quot;,t=0){return Q(ns,null,e,t)}function ct(e,t){const s=Q(Nt,null,e);return s.staticCount=t,s}function Ti(e=&quot;&quot;,t=!1){return t?(Se(),Ci(qe,null,e)):Q(qe,null,e)}function ye(e){return e==null||typeof e==&quot;boolean&quot;?Q(qe):A(e)?Q(_e,null,e.slice()):An(e)?De(e):Q(ns,null,String(e))}function De(e){return e.el===null&amp;&amp;e.patchFlag!==-1||e.memo?e:ot(e)}function ks(e,t){let s=0;const{shapeFlag:r}=e;if(t==null)t=null;else if(A(t))s=16;else if(typeof t==&quot;object&quot;)if(r&amp;65){const n=t.default;n&amp;&amp;(n._c&amp;&amp;(n._d=!1),ks(e,n()),n._c&amp;&amp;(n._d=!0));return}else{s=32;const n=t._;!n&amp;&amp;!mn(t)?t._ctx=we:n===3&amp;&amp;we&amp;&amp;(we.slots._===1?t._=1:(t._=2,e.patchFlag|=1024))}else I(t)?(t={default:t,_ctx:we},s=32):(t=String(t),r&amp;64?(s=16,t=[In(t)]):s=8);e.children=t,e.shapeFlag|=s}function Ri(...e){const t={};for(let s=0;s&lt;e.length;s++){const r=e[s];for(const n in r)if(n===&quot;class&quot;)t.class!==r.class&amp;&amp;(t.class=Pe([t.class,r.class]));else if(n===&quot;style&quot;)t.style=Zt([t.style,r.style]);else if(Gt(n)){const a=t[n],i=r[n];i&amp;&amp;a!==i&amp;&amp;!(A(a)&amp;&amp;a.includes(i))&amp;&amp;(t[n]=a?[].concat(a,i):i)}else n!==&quot;&quot;&amp;&amp;(t[n]=r[n])}return t}function xe(e,t,s,r=null){Ee(e,t,7,[s,r])}const Pi=pn();let Ai=0;function Oi(e,t,s){const r=e.type,n=(t?t.appContext:e.appContext)||Pi,a={uid:Ai++,vnode:e,type:r,parent:t,appContext:n,root:null,next:null,subTree:null,effect:null,update:null,job:null,scope:new Qn(!0),render:null,proxy:null,exposed:null,exposeProxy:null,withProxy:null,provides:t?t.provides:Object.create(n.provides),ids:t?t.ids:[&quot;&quot;,0,0],accessCache:null,renderCache:[],components:null,directives:null,propsOptions:xn(r,n),emitsOptions:Tn(r,n),emit:null,emitted:null,propsDefaults:q,inheritAttrs:r.inheritAttrs,ctx:q,data:q,props:q,attrs:q,slots:q,refs:q,setupState:q,setupContext:null,suspense:s,suspenseId:s?s.pendingId:0,asyncDep:null,asyncResolved:!1,isMounted:!1,isUnmounted:!1,isDeactivated:!1,bc:null,c:null,bm:null,m:null,bu:null,u:null,um:null,bum:null,da:null,a:null,rtg:null,rtc:null,ec:null,sp:null};return a.ctx={_:a},a.root=t?t.root:a,a.emit=mi.bind(null,a),e.ce&amp;&amp;e.ce(a),a}let ne=null;const Ii=()=&gt;ne||we;let Yt,Ps;{const e=Qt(),t=(s,r)=&gt;{let n;return(n=e[s])||(n=e[s]=[]),n.push(r),a=&gt;{n.length&gt;1?n.forEach(i=&gt;i(a)):n[0](a)}};Yt=t(&quot;__VUE_INSTANCE_SETTERS__&quot;,s=&gt;ne=s),Ps=t(&quot;__VUE_SSR_SETTERS__&quot;,s=&gt;Pt=s)}const Ot=e=&gt;{const t=ne;return Yt(e),e.scope.on(),()=&gt;{e.scope.off(),Yt(t)}},hr=()=&gt;{ne&amp;&amp;ne.scope.off(),Yt(null)};function Mn(e){return e.vnode.shapeFlag&amp;4}let Pt=!1;function Mi(e,t=!1,s=!1){t&amp;&amp;Ps(t);const{props:r,children:n}=e.vnode,a=Mn(e);si(e,r,a,t),ii(e,n,s||t);const i=a?ji(e,t):void 0;return t&amp;&amp;Ps(!1),i}function ji(e,t){const s=e.type;e.accessCache=Object.create(null),e.proxy=new Proxy(e.ctx,ka);const{setup:r}=s;if(r){Ie();const n=e.setupContext=r.length&gt;1?Li(e):null,a=Ot(e),i=At(r,e,0,[e.props,n]),o=Ir(i);if(Me(),a(),(o||e.sp)&amp;&amp;!yt(e)&amp;&amp;ln(e),o){if(i.then(hr,hr),t)return i.then(c=&gt;{gr(e,c)}).catch(c=&gt;{ts(c,e,0)});e.asyncDep=i}else gr(e,i)}else jn(e)}function gr(e,t,s){I(t)?e.type.__ssrInlineRender?e.ssrRender=t:e.render=t:K(t)&amp;&amp;(e.setupState=en(t)),jn(e)}function jn(e,t,s){const r=e.type;e.render||(e.render=r.render||Ce);{const n=Ot(e);Ie();try{Ya(e)}finally{Me(),n()}}}const Fi={get(e,t){return X(e,&quot;get&quot;,&quot;&quot;),e[t]}};function Li(e){const t=s=&gt;{e.exposed=s||{}};return{attrs:new Proxy(e.attrs,Fi),slots:e.slots,emit:e.emit,expose:t}}function Ys(e){return e.exposed?e.exposeProxy||(e.exposeProxy=new Proxy(en(ba(e.exposed)),{get(t,s){if(s in t)return t[s];if(s in wt)return wt[s](e)},has(t,s){return s in t||s in wt}})):e.proxy}function $i(e){return I(e)&amp;&amp;&quot;__vccOpts&quot;in e}const Fn=(e,t)=&gt;Sa(e,t,Pt),Di=&quot;3.5.18&quot;;/**
+* @vue/runtime-dom v3.5.18
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/let As;const mr=typeof window&lt;&quot;u&quot;&amp;&amp;window.trustedTypes;if(mr)try{As=mr.createPolicy(&quot;vue&quot;,{createHTML:e=&gt;e})}catch{}const Ln=As?e=&gt;As.createHTML(e):e=&gt;e,Hi=&quot;http://www.w3.org/2000/svg&quot;,Bi=&quot;http://www.w3.org/1998/Math/MathML&quot;,Re=typeof document&lt;&quot;u&quot;?document:null,vr=Re&amp;&amp;Re.createElement(&quot;template&quot;),Ni={insert:(e,t,s)=&gt;{t.insertBefore(e,s||null)},remove:e=&gt;{const t=e.parentNode;t&amp;&amp;t.removeChild(e)},createElement:(e,t,s,r)=&gt;{const n=t===&quot;svg&quot;?Re.createElementNS(Hi,e):t===&quot;mathml&quot;?Re.createElementNS(Bi,e):s?Re.createElement(e,{is:s}):Re.createElement(e);return e===&quot;select&quot;&amp;&amp;r&amp;&amp;r.multiple!=null&amp;&amp;n.setAttribute(&quot;multiple&quot;,r.multiple),n},createText:e=&gt;Re.createTextNode(e),createComment:e=&gt;Re.createComment(e),setText:(e,t)=&gt;{e.nodeValue=t},setElementText:(e,t)=&gt;{e.textContent=t},parentNode:e=&gt;e.parentNode,nextSibling:e=&gt;e.nextSibling,querySelector:e=&gt;Re.querySelector(e),setScopeId(e,t){e.setAttribute(t,&quot;&quot;)},insertStaticContent(e,t,s,r,n,a){const i=s?s.previousSibling:t.lastChild;if(n&amp;&amp;(n===a||n.nextSibling))for(;t.insertBefore(n.cloneNode(!0),s),!(n===a||!(n=n.nextSibling)););else{vr.innerHTML=Ln(r===&quot;svg&quot;?`&lt;svg&gt;${e}&lt;/svg&gt;`:r===&quot;mathml&quot;?`&lt;math&gt;${e}&lt;/math&gt;`:e);const o=vr.content;if(r===&quot;svg&quot;||r===&quot;mathml&quot;){const c=o.firstChild;for(;c.firstChild;)o.appendChild(c.firstChild);o.removeChild(c)}t.insertBefore(o,s)}return[i?i.nextSibling:t.firstChild,s?s.previousSibling:t.lastChild]}},Ui=Symbol(&quot;_vtc&quot;);function qi(e,t,s){const r=e[Ui];r&amp;&amp;(t=(t?[t,...r]:[...r]).join(&quot; &quot;)),t==null?e.removeAttribute(&quot;class&quot;):s?e.setAttribute(&quot;class&quot;,t):e.className=t}const xr=Symbol(&quot;_vod&quot;),Vi=Symbol(&quot;_vsh&quot;),Ki=Symbol(&quot;&quot;),Wi=/(^|;)\s*display\s*:/;function zi(e,t,s){const r=e.style,n=k(s);let a=!1;if(s&amp;&amp;!n){if(t)if(k(t))for(const i of t.split(&quot;;&quot;)){const o=i.slice(0,i.indexOf(&quot;:&quot;)).trim();s[o]==null&amp;&amp;qt(r,o,&quot;&quot;)}else for(const i in t)s[i]==null&amp;&amp;qt(r,i,&quot;&quot;);for(const i in s)i===&quot;display&quot;&amp;&amp;(a=!0),qt(r,i,s[i])}else if(n){if(t!==s){const i=r[Ki];i&amp;&amp;(s+=&quot;;&quot;+i),r.cssText=s,a=Wi.test(s)}}else t&amp;&amp;e.removeAttribute(&quot;style&quot;);xr in e&amp;&amp;(e[xr]=a?r.display:&quot;&quot;,e[Vi]&amp;&amp;(r.display=&quot;none&quot;))}const br=/\s*!important$/;function qt(e,t,s){if(A(s))s.forEach(r=&gt;qt(e,t,r));else if(s==null&amp;&amp;(s=&quot;&quot;),t.startsWith(&quot;--&quot;))e.setProperty(t,s);else{const r=ki(e,t);br.test(s)?e.setProperty(Qe(r),s.replace(br,&quot;&quot;),&quot;important&quot;):e[r]=s}}const _r=[&quot;Webkit&quot;,&quot;Moz&quot;,&quot;ms&quot;],vs={};function ki(e,t){const s=vs[t];if(s)return s;let r=Ne(t);if(r!==&quot;filter&quot;&amp;&amp;r in e)return vs[t]=r;r=Fr(r);for(let n=0;n&lt;_r.length;n++){const a=_r[n]+r;if(a in e)return vs[t]=a}return t}const yr=&quot;http://www.w3.org/1999/xlink&quot;;function wr(e,t,s,r,n,a=Xn(t)){r&amp;&amp;t.startsWith(&quot;xlink:&quot;)?s==null?e.removeAttributeNS(yr,t.slice(6,t.length)):e.setAttributeNS(yr,t,s):s==null||a&amp;&amp;!Lr(s)?e.removeAttribute(t):e.setAttribute(t,a?&quot;&quot;:Ve(s)?String(s):s)}function Cr(e,t,s,r,n){if(t===&quot;innerHTML&quot;||t===&quot;textContent&quot;){s!=null&amp;&amp;(e[t]=t===&quot;innerHTML&quot;?Ln(s):s);return}const a=e.tagName;if(t===&quot;value&quot;&amp;&amp;a!==&quot;PROGRESS&quot;&amp;&amp;!a.includes(&quot;-&quot;)){const o=a===&quot;OPTION&quot;?e.getAttribute(&quot;value&quot;)||&quot;&quot;:e.value,c=s==null?e.type===&quot;checkbox&quot;?&quot;on&quot;:&quot;&quot;:String(s);(o!==c||!(&quot;_value&quot;in e))&amp;&amp;(e.value=c),s==null&amp;&amp;e.removeAttribute(t),e._value=s;return}let i=!1;if(s===&quot;&quot;||s==null){const o=typeof e[t];o===&quot;boolean&quot;?s=Lr(s):s==null&amp;&amp;o===&quot;string&quot;?(s=&quot;&quot;,i=!0):o===&quot;number&quot;&amp;&amp;(s=0,i=!0)}try{e[t]=s}catch{}i&amp;&amp;e.removeAttribute(n||t)}function Yi(e,t,s,r){e.addEventListener(t,s,r)}function Gi(e,t,s,r){e.removeEventListener(t,s,r)}const Sr=Symbol(&quot;_vei&quot;);function Ji(e,t,s,r,n=null){const a=e[Sr]||(e[Sr]={}),i=a[t];if(r&amp;&amp;i)i.value=r;else{const[o,c]=Xi(t);if(r){const p=a[t]=el(r,n);Yi(e,o,p,c)}else i&amp;&amp;(Gi(e,o,i,c),a[t]=void 0)}}const Er=/(?:Once|Passive|Capture)$/;function Xi(e){let t;if(Er.test(e)){t={};let r;for(;r=e.match(Er);)e=e.slice(0,e.length-r[0].length),t[r[0].toLowerCase()]=!0}return[e[2]===&quot;:&quot;?e.slice(3):Qe(e.slice(2)),t]}let xs=0;const Qi=Promise.resolve(),Zi=()=&gt;xs||(Qi.then(()=&gt;xs=0),xs=Date.now());function el(e,t){const s=r=&gt;{if(!r._vts)r._vts=Date.now();else if(r._vts&lt;=s.attached)return;Ee(tl(r,s.value),t,5,[r])};return s.value=e,s.attached=Zi(),s}function tl(e,t){if(A(t)){const s=e.stopImmediatePropagation;return e.stopImmediatePropagation=()=&gt;{s.call(e),e._stopped=!0},t.map(r=&gt;n=&gt;!n._stopped&amp;&amp;r&amp;&amp;r(n))}else return t}const Tr=e=&gt;e.charCodeAt(0)===111&amp;&amp;e.charCodeAt(1)===110&amp;&amp;e.charCodeAt(2)&gt;96&amp;&amp;e.charCodeAt(2)&lt;123,sl=(e,t,s,r,n,a)=&gt;{const i=n===&quot;svg&quot;;t===&quot;class&quot;?qi(e,r,i):t===&quot;style&quot;?zi(e,s,r):Gt(t)?Is(t)||Ji(e,t,s,r,a):(t[0]===&quot;.&quot;?(t=t.slice(1),!0):t[0]===&quot;^&quot;?(t=t.slice(1),!1):rl(e,t,r,i))?(Cr(e,t,r),!e.tagName.includes(&quot;-&quot;)&amp;&amp;(t===&quot;value&quot;||t===&quot;checked&quot;||t===&quot;selected&quot;)&amp;&amp;wr(e,t,r,i,a,t!==&quot;value&quot;)):e._isVueCE&amp;&amp;(/[A-Z]/.test(t)||!k(r))?Cr(e,Ne(t),r,a,t):(t===&quot;true-value&quot;?e._trueValue=r:t===&quot;false-value&quot;&amp;&amp;(e._falseValue=r),wr(e,t,r,i))};function rl(e,t,s,r){if(r)return!!(t===&quot;innerHTML&quot;||t===&quot;textContent&quot;||t in e&amp;&amp;Tr(t)&amp;&amp;I(s));if(t===&quot;spellcheck&quot;||t===&quot;draggable&quot;||t===&quot;translate&quot;||t===&quot;autocorrect&quot;||t===&quot;form&quot;||t===&quot;list&quot;&amp;&amp;e.tagName===&quot;INPUT&quot;||t===&quot;type&quot;&amp;&amp;e.tagName===&quot;TEXTAREA&quot;)return!1;if(t===&quot;width&quot;||t===&quot;height&quot;){const n=e.tagName;if(n===&quot;IMG&quot;||n===&quot;VIDEO&quot;||n===&quot;CANVAS&quot;||n===&quot;SOURCE&quot;)return!1}return Tr(t)&amp;&amp;k(s)?!1:t in e}const nl=ee({patchProp:sl},Ni);let Rr;function al(){return Rr||(Rr=oi(nl))}const il=(...e)=&gt;{const t=al().createApp(...e),{mount:s}=t;return t.mount=r=&gt;{const n=ol(r);if(!n)return;const a=t._component;!I(a)&amp;&amp;!a.render&amp;&amp;!a.template&amp;&amp;(a.template=n.innerHTML),n.nodeType===1&amp;&amp;(n.textContent=&quot;&quot;);const i=s(n,!1,ll(n));return n instanceof Element&amp;&amp;(n.removeAttribute(&quot;v-cloak&quot;),n.setAttribute(&quot;data-v-app&quot;,&quot;&quot;)),i},t};function ll(e){if(e instanceof SVGElement)return&quot;svg&quot;;if(typeof MathMLElement==&quot;function&quot;&amp;&amp;e instanceof MathMLElement)return&quot;mathml&quot;}function ol(e){return k(e)?document.querySelector(e):e}const $n=&quot;&quot;+new URL(&quot;dos-cremas-juntas-2-CjiWVThi.jpg&quot;,import.meta.url).href,cl=&quot;&quot;+new URL(&quot;untando-crema-verde-3-DhG0t5Dr.jpg&quot;,import.meta.url).href,Dn=&quot;&quot;+new URL(&quot;untando-crema-morada-3-CB_zEqBe.jpg&quot;,import.meta.url).href,fl=&quot;&quot;+new URL(&quot;dos-cremas-vertical-BMg6jSkd.jpg&quot;,import.meta.url).href,dl=&quot;&quot;+new URL(&quot;untando-crema-verde-8-BSwVKXE9.jpg&quot;,import.meta.url).href,ul=&quot;&quot;+new URL(&quot;untando-crema-morada-10-sck8kLaP.jpg&quot;,import.meta.url).href,pl={id:&quot;inicio&quot;,class:&quot;w-full min-h-screen bg-white relative overflow-hidden&quot;},hl={class:&quot;flex justify-between items-start max-w-7xl mx-auto&quot;},gl={class:&quot;hidden md:flex space-x-8 text-md&quot;},ml={key:0,class:&quot;grid grid-cols-2 gap-x-4 gap-y-1 text-xs md:hidden&quot;},vl={class:&quot;relative w-full min-h-screen overflow-hidden pt-20&quot;},xl={class:&quot;min-w-full h-full relative&quot;},bl=[&quot;src&quot;],_l=[&quot;src&quot;],yl={class:&quot;min-w-full h-full relative&quot;},wl=[&quot;src&quot;],Cl=[&quot;src&quot;],Sl={class:&quot;min-w-full h-full relative&quot;},El=[&quot;src&quot;],Tl=[&quot;src&quot;],Rl={class:&quot;absolute bottom-8 right-8 flex space-x-3 z-30&quot;},Pl=[&quot;onClick&quot;],Al=Ze({__name:&quot;HeroSection&quot;,setup(e){const t=ps(0);let s=null;const r=ps(!1),n=ps(null),a=()=&gt;{r.value=window.scrollY&gt;50},i=()=&gt;{t.value=(t.value+1)%3};return fn(()=&gt;{s=setInterval(i,4e3),window.addEventListener(&quot;scroll&quot;,a),a()}),Ks(()=&gt;{s&amp;&amp;clearInterval(s),window.removeEventListener(&quot;scroll&quot;,a)}),(o,c)=&gt;(Se(),Oe(&quot;div&quot;,pl,[O(&quot;header&quot;,{ref_key:&quot;navbar&quot;,ref:n,class:Pe([&quot;w-full px-8 py-8 md:py-6 fixed top-0 left-0 right-0 z-50 font-serif transition-all duration-300&quot;,r.value?&quot;bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100/20&quot;:&quot;bg-transparent&quot;])},[O(&quot;nav&quot;,hl,[c[1]||(c[1]=O(&quot;div&quot;,{class:&quot;flex items-center space-x-3&quot;},[O(&quot;div&quot;,{class:&quot;text-2xl font-bold text-gray-900 drop-shadow-lg transition-colors duration-300&quot;},&quot; Raymi &quot;)],-1)),O(&quot;div&quot;,gl,[O(&quot;a&quot;,{href:&quot;#inicio&quot;,class:Pe([&quot;hover:text-[#6B8E23] transition-colors font-medium&quot;,r.value?&quot;text-gray-700&quot;:&quot;text-white drop-shadow-md&quot;])},&quot; Inicio &quot;,2),O(&quot;a&quot;,{href:&quot;#quienes-somos&quot;,class:Pe([&quot;hover:text-[#6B8E23] transition-colors font-medium&quot;,r.value?&quot;text-gray-700&quot;:&quot;text-white drop-shadow-md&quot;])},&quot; Quiénes somos &quot;,2),O(&quot;a&quot;,{href:&quot;#productos&quot;,class:Pe([&quot;hover:text-[#6B8E23] transition-colors font-medium&quot;,r.value?&quot;text-gray-700&quot;:&quot;text-white drop-shadow-md&quot;])},&quot; Productos &quot;,2),O(&quot;a&quot;,{href:&quot;#contactanos&quot;,class:Pe([&quot;hover:text-[#6B8E23] transition-colors font-medium&quot;,r.value?&quot;text-gray-700&quot;:&quot;text-white drop-shadow-md&quot;])},&quot; Contáctanos &quot;,2)]),r.value?(Se(),Oe(&quot;div&quot;,ml,c[0]||(c[0]=[O(&quot;a&quot;,{href:&quot;#inicio&quot;,class:&quot;hover:text-[#6B8E23] transition-colors font-medium text-center text-gray-700&quot;},&quot; Inicio &quot;,-1),O(&quot;a&quot;,{href:&quot;#quienes-somos&quot;,class:&quot;hover:text-[#6B8E23] transition-colors font-medium text-center text-gray-700&quot;},&quot; Quiénes somos &quot;,-1),O(&quot;a&quot;,{href:&quot;#productos&quot;,class:&quot;hover:text-[#6B8E23] transition-colors font-medium text-center text-gray-700&quot;},&quot; Productos &quot;,-1),O(&quot;a&quot;,{href:&quot;#contactanos&quot;,class:&quot;hover:text-[#6B8E23] transition-colors font-medium text-center text-gray-700&quot;},&quot; Contáctanos &quot;,-1)]))):Ti(&quot;&quot;,!0)])],2),O(&quot;div&quot;,vl,[O(&quot;div&quot;,{class:&quot;absolute inset-0 flex transition-transform duration-1000 ease-in-out&quot;,style:Zt({transform:`translateX(-${t.value*100}%)`})},[O(&quot;div&quot;,xl,[O(&quot;img&quot;,{src:Ge($n),alt:&quot;Productos Raymi - Cremas naturales&quot;,class:&quot;w-full h-full object-cover hidden md:block&quot;},null,8,bl),O(&quot;img&quot;,{src:Ge(fl),alt:&quot;Productos Raymi - Cremas naturales&quot;,class:&quot;w-full h-full object-cover md:hidden&quot;},null,8,_l)]),O(&quot;div&quot;,yl,[O(&quot;img&quot;,{src:Ge(cl),alt:&quot;Aplicación de crema verde Raymi&quot;,class:&quot;w-full h-full object-cover hidden md:block&quot;},null,8,wl),O(&quot;img&quot;,{src:Ge(dl),alt:&quot;Aplicación de crema verde Raymi&quot;,class:&quot;w-full h-full object-cover md:hidden&quot;},null,8,Cl)]),O(&quot;div&quot;,Sl,[O(&quot;img&quot;,{src:Ge(Dn),alt:&quot;Aplicación de crema morada Raymi&quot;,class:&quot;w-full h-full object-cover hidden md:block&quot;},null,8,El),O(&quot;img&quot;,{src:Ge(ul),alt:&quot;Aplicación de crema morada Raymi&quot;,class:&quot;w-full h-full object-cover md:hidden&quot;},null,8,Tl)])],4),c[2]||(c[2]=ct(&#39;&lt;div class=&quot;absolute left-0 top-0 w-2/3 md:w-1/2 h-full flex items-center z-20&quot; data-v-68c1435e&gt;&lt;div class=&quot;px-4 md:px-16 py-20 w-full md:w-auto&quot; data-v-68c1435e&gt;&lt;div class=&quot;max-w-lg md:max-w-xl&quot; data-v-68c1435e&gt;&lt;div class=&quot;hidden md:inline-block bg-[#6B8E23]/10 text-[#6B8E23] px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6&quot; data-v-68c1435e&gt; 🌿 Productos Artesanales Peruanos &lt;/div&gt;&lt;h1 class=&quot;text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4 md:mb-6 font-serif&quot; data-v-68c1435e&gt; Sabor que celebra&lt;br data-v-68c1435e&gt;&lt;span class=&quot;text-[#6B8E23] block&quot; data-v-68c1435e&gt;tus momentos&lt;/span&gt;&lt;/h1&gt;&lt;p class=&quot;text-gray-600 text-sm mb-6 leading-relaxed font-serif md:hidden&quot; data-v-68c1435e&gt; Cremas de aceituna verde y negra, ideales para acompañar vinos y celebraciones. &lt;/p&gt;&lt;p class=&quot;hidden md:block text-gray-600 text-lg mb-8 leading-relaxed font-serif&quot; data-v-68c1435e&gt; Transforma cada reunión en una experiencia gourmet con nuestras cremas de aceituna verde y negra, ideales para acompañar vinos cervezas y disfrutar celebraciones. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;absolute left-0 top-0 w-2/3 md:w-1/2 h-full bg-gradient-to-r from-white via-white/90 to-white/20 md:to-transparent z-10&quot; data-v-68c1435e&gt;&lt;/div&gt;&#39;,2)),O(&quot;div&quot;,Rl,[(Se(),Oe(_e,null,za(3,p=&gt;O(&quot;button&quot;,{key:p-1,onClick:d=&gt;t.value=p-1,class:Pe([&quot;w-4 h-4 rounded-full transition-all duration-300&quot;,t.value===p-1?&quot;bg-[#6B8E23] shadow-lg scale-110&quot;:&quot;bg-white/70 hover:bg-white/90 shadow-md&quot;])},null,10,Pl)),64))])])]))}}),et=(e,t)=&gt;{const s=e.__vccOpts||e;for(const[r,n]of t)s[r]=n;return s},Ol=et(Al,[[&quot;__scopeId&quot;,&quot;data-v-68c1435e&quot;]]),Pr=&quot;&quot;+new URL(&quot;verde-crema-aceituna-CUVNluLX.jpg&quot;,import.meta.url).href,Ar=&quot;&quot;+new URL(&quot;morado-crema-aceituna-B2xXCg8r.jpg&quot;,import.meta.url).href,Il={id:&quot;productos&quot;,class:&quot;w-full bg-white py-8 md:py-14&quot;},Ml=Ze({__name:&quot;ProductsSection&quot;,setup(e){return(t,s)=&gt;(Se(),Oe(&quot;section&quot;,Il,s[0]||(s[0]=[ct(&#39;&lt;div class=&quot;max-w-7xl mx-auto px-8&quot; data-v-8031147d&gt;&lt;div class=&quot;text-center mb-16&quot; data-v-8031147d&gt;&lt;div class=&quot;inline-block&quot; data-v-8031147d&gt;&lt;h1 class=&quot;text-5xl lg:text-6xl font-bold text-gray-900 font-serif leading-tight mb-4&quot; data-v-8031147d&gt; Productos &lt;/h1&gt;&lt;div class=&quot;w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto&quot; data-v-8031147d&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;mb-12 lg:mb-20&quot; data-v-8031147d&gt;&lt;div class=&quot;hidden lg:grid lg:grid-cols-2 gap-16 items-center&quot; data-v-8031147d&gt;&lt;div class=&quot;space-y-8&quot; data-v-8031147d&gt;&lt;h2 class=&quot;text-2xl lg:text-4xl font-bold text-gray-900 font-serif leading-tight&quot; data-v-8031147d&gt; Crema de aceituna verde &lt;/h2&gt;&lt;div class=&quot;space-y-6 text-gray-600 leading-relaxed font-serif&quot; data-v-8031147d&gt;&lt;ul class=&quot;space-y-5 text-lg&quot; data-v-8031147d&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-green-600 mr-4 mt-1 text-xl&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-green-600/30 pb-0.5&quot; data-v-8031147d&gt;Ideal para maridar&lt;/span&gt;: acompaña quesos, panes artesanales y pescados a la perfección &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-green-600 mr-4 mt-1 text-xl&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-green-600/30 pb-0.5&quot; data-v-8031147d&gt;100% natural&lt;/span&gt;: sin aditivos ni conservantes, conservando el sabor auténtico de la aceituna verde peruana &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-green-600 mr-4 mt-1 text-xl&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-green-600/30 pb-0.5&quot; data-v-8031147d&gt;Textura cremosa&lt;/span&gt;: fácil de untar y perfecta para dips y piqueos &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-green-600 mr-4 mt-1 text-xl&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-green-600/30 pb-0.5&quot; data-v-8031147d&gt;Hecha para celebrar&lt;/span&gt;: lleva un toque de frescura a cualquier reunión o evento &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot; data-v-8031147d&gt;&lt;img src=&quot;&#39;+Pr+&#39;&quot; alt=&quot;Crema de aceituna verde - Producto mockup&quot; class=&quot;w-full h-96 object-cover rounded-lg shadow-lg&quot; data-v-8031147d&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;lg:hidden space-y-6&quot; data-v-8031147d&gt;&lt;h2 class=&quot;text-2xl font-bold text-gray-900 font-serif leading-tight text-center&quot; data-v-8031147d&gt; Crema de aceituna verde &lt;/h2&gt;&lt;div class=&quot;relative mb-10&quot; data-v-8031147d&gt;&lt;img src=&quot;&#39;+Pr+&#39;&quot; alt=&quot;Crema de aceituna verde - Producto mockup&quot; class=&quot;w-full h-64 object-cover rounded-lg shadow-lg&quot; data-v-8031147d&gt;&lt;/div&gt;&lt;div class=&quot;space-y-4 text-gray-600 leading-relaxed font-serif pt-4&quot; data-v-8031147d&gt;&lt;ul class=&quot;space-y-4 text-base&quot; data-v-8031147d&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-green-600 mr-3 mt-1 text-lg&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-green-600/30 pb-0.5&quot; data-v-8031147d&gt;Ideal para maridar&lt;/span&gt;: acompaña quesos, panes artesanales y pescados a la perfección &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-green-600 mr-3 mt-1 text-lg&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-green-600/30 pb-0.5&quot; data-v-8031147d&gt;100% natural&lt;/span&gt;: sin aditivos ni conservantes, conservando el sabor auténtico de la aceituna verde peruana &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-green-600 mr-3 mt-1 text-lg&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-green-600/30 pb-0.5&quot; data-v-8031147d&gt;Textura cremosa&lt;/span&gt;: fácil de untar y perfecta para dips y piqueos &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-green-600 mr-3 mt-1 text-lg&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-green-600/30 pb-0.5&quot; data-v-8031147d&gt;Hecha para celebrar&lt;/span&gt;: lleva un toque de frescura a cualquier reunión o evento &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-v-8031147d&gt;&lt;div class=&quot;hidden lg:grid lg:grid-cols-2 gap-16 items-center&quot; data-v-8031147d&gt;&lt;div class=&quot;relative&quot; data-v-8031147d&gt;&lt;img src=&quot;&#39;+Ar+&#39;&quot; alt=&quot;Crema de aceituna morada - Producto mockup&quot; class=&quot;w-full h-96 object-cover rounded-lg shadow-lg&quot; data-v-8031147d&gt;&lt;/div&gt;&lt;div class=&quot;space-y-8&quot; data-v-8031147d&gt;&lt;h2 class=&quot;text-4xl lg:text-4xl font-bold text-gray-900 font-serif leading-tight&quot; data-v-8031147d&gt; Crema de aceituna morada &lt;/h2&gt;&lt;div class=&quot;space-y-6 text-gray-600 leading-relaxed font-serif&quot; data-v-8031147d&gt;&lt;ul class=&quot;space-y-5 text-lg&quot; data-v-8031147d&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-purple-600 mr-4 mt-1 text-xl&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-purple-600/30 pb-0.5&quot; data-v-8031147d&gt;Versátil en la cocina&lt;/span&gt;: realza pastas, carnes y tablas de fiambres &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-purple-600 mr-4 mt-1 text-xl&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-purple-600/30 pb-0.5&quot; data-v-8031147d&gt;Origen peruano&lt;/span&gt;: elaborada con aceitunas moradas seleccionadas de alta calidad &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-purple-600 mr-4 mt-1 text-xl&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-purple-600/30 pb-0.5&quot; data-v-8031147d&gt;Sin aditivos ni conservantes&lt;/span&gt;: un producto gourmet y natural &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-purple-600 mr-4 mt-1 text-xl&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-purple-600/30 pb-0.5&quot; data-v-8031147d&gt;Perfecta para ocasiones especiales&lt;/span&gt;: aporta distinción y un sabor memorable a tus celebraciones &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;lg:hidden space-y-6&quot; data-v-8031147d&gt;&lt;h2 class=&quot;text-2xl font-bold text-gray-900 font-serif leading-tight text-center&quot; data-v-8031147d&gt; Crema de aceituna morada &lt;/h2&gt;&lt;div class=&quot;relative mb-10&quot; data-v-8031147d&gt;&lt;img src=&quot;&#39;+Ar+&#39;&quot; alt=&quot;Crema de aceituna morada - Producto mockup&quot; class=&quot;w-full h-64 object-cover rounded-lg shadow-lg&quot; data-v-8031147d&gt;&lt;/div&gt;&lt;div class=&quot;space-y-4 text-gray-600 leading-relaxed font-serif pt-4&quot; data-v-8031147d&gt;&lt;ul class=&quot;space-y-4 text-base&quot; data-v-8031147d&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-purple-600 mr-3 mt-1 text-lg&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-purple-600/30 pb-0.5&quot; data-v-8031147d&gt;Versátil en la cocina&lt;/span&gt;: realza pastas, carnes y tablas de fiambres &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-purple-600 mr-3 mt-1 text-lg&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-purple-600/30 pb-0.5&quot; data-v-8031147d&gt;Origen peruano&lt;/span&gt;: elaborada con aceitunas moradas seleccionadas de alta calidad &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-purple-600 mr-3 mt-1 text-lg&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-purple-600/30 pb-0.5&quot; data-v-8031147d&gt;Sin aditivos ni conservantes&lt;/span&gt;: un producto gourmet y natural &lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-8031147d&gt;&lt;span class=&quot;text-purple-600 mr-3 mt-1 text-lg&quot; data-v-8031147d&gt;•&lt;/span&gt;&lt;span class=&quot;leading-relaxed&quot; data-v-8031147d&gt;&lt;span class=&quot;font-semibold border-b border-purple-600/30 pb-0.5&quot; data-v-8031147d&gt;Perfecta para ocasiones especiales&lt;/span&gt;: aporta distinción y un sabor memorable a tus celebraciones &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;,1)])))}}),jl=et(Ml,[[&quot;__scopeId&quot;,&quot;data-v-8031147d&quot;]]),Fl=&quot;&quot;+new URL(&quot;untando-crema-verde-6-BIDnq48E.jpg&quot;,import.meta.url).href,Ll=&quot;&quot;+new URL(&quot;untando-crema-morada-2-C1AHphYb.jpg&quot;,import.meta.url).href,$l={id:&quot;quienes-somos&quot;,class:&quot;w-full bg-gradient-to-b from-white py-16&quot;},Dl=Ze({__name:&quot;AboutUs&quot;,setup(e){return(t,s)=&gt;(Se(),Oe(&quot;section&quot;,$l,s[0]||(s[0]=[ct(&#39;&lt;div class=&quot;max-w-7xl mx-auto px-8&quot; data-v-ddef8730&gt;&lt;div class=&quot;text-center mb-12&quot; data-v-ddef8730&gt;&lt;div class=&quot;inline-block&quot; data-v-ddef8730&gt;&lt;h2 class=&quot;text-5xl lg:text-6xl font-bold text-gray-900 font-serif leading-tight mb-4&quot; data-v-ddef8730&gt; Quiénes somos &lt;/h2&gt;&lt;div class=&quot;w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto&quot; data-v-ddef8730&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid lg:grid-cols-2 gap-16 items-center mb-20&quot; data-v-ddef8730&gt;&lt;div class=&quot;space-y-8&quot; data-v-ddef8730&gt;&lt;div class=&quot;space-y-6&quot; data-v-ddef8730&gt;&lt;h3 class=&quot;text-2xl lg:text-3xl font-serif font-semibold text-gray-900 leading-tight&quot; data-v-ddef8730&gt; Transformamos la tradición en sabor gourmet &lt;/h3&gt;&lt;p class=&quot;text-lg text-gray-700 leading-relaxed font-medium&quot; data-v-ddef8730&gt; Somos un emprendimiento familiar que celebra la riqueza gastronómica peruana a través de nuestras cremas de aceituna verde y morada, elaboradas con ingredientes seleccionados y calidad premium. &lt;/p&gt;&lt;div class=&quot;bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg&quot; data-v-ddef8730&gt;&lt;p class=&quot;text-gray-700 leading-relaxed italic&quot; data-v-ddef8730&gt; Nuestro nombre &lt;span class=&quot;font-bold text-green-800 not-italic&quot; data-v-ddef8730&gt;&amp;#39;Raymi&amp;#39;&lt;/span&gt; significa &lt;span class=&quot;font-semibold text-green-700 not-italic&quot; data-v-ddef8730&gt;&amp;#39;fiesta&amp;#39;&lt;/span&gt; en quechua, reflejando la esencia de nuestra marca: celebrar cada momento con un toque auténtico y peruano. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative group&quot; data-v-ddef8730&gt;&lt;div class=&quot;absolute inset-0 bg-gradient-to-tr from-green-600/10 to-transparent rounded-xl&quot; data-v-ddef8730&gt;&lt;/div&gt;&lt;img src=&quot;&#39;+$n+&#39;&quot; alt=&quot;Productos Raymi - Cremas de aceituna artesanales&quot; class=&quot;w-full h-[450px] object-cover rounded-xl shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]&quot; data-v-ddef8730&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid lg:grid-cols-5 gap-12 items-start&quot; data-v-ddef8730&gt;&lt;div class=&quot;lg:col-span-3 space-y-12 md:mt-24&quot; data-v-ddef8730&gt;&lt;div class=&quot;space-y-6&quot; data-v-ddef8730&gt;&lt;h3 class=&quot;text-3xl lg:text-4xl font-serif font-bold text-gray-900 leading-tight&quot; data-v-ddef8730&gt; Misión &lt;/h3&gt;&lt;div class=&quot;bg-green-50 border-l-4 border-green-500 p-8 rounded-r-lg&quot; data-v-ddef8730&gt;&lt;p class=&quot;text-lg text-gray-700 leading-relaxed italic font-serif&quot; data-v-ddef8730&gt; &amp;quot;Crear cremas de aceituna verde y morada que fusionen tradición peruana e innovación gastronómica, ofreciendo calidad premium y un sabor único que convierte cada momento en una celebración.&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;space-y-6&quot; data-v-ddef8730&gt;&lt;h3 class=&quot;text-3xl lg:text-4xl font-serif font-bold text-gray-900 leading-tight&quot; data-v-ddef8730&gt; Visión &lt;/h3&gt;&lt;div class=&quot;bg-purple-50 border-l-4 border-purple-500 p-8 rounded-r-lg&quot; data-v-ddef8730&gt;&lt;p class=&quot;text-lg text-gray-700 leading-relaxed italic font-serif&quot; data-v-ddef8730&gt; &amp;quot;Ser la marca peruana referente en cremas de aceituna gourmet, reconocida por su calidad, autenticidad y capacidad de llevar el espíritu festivo de Raymi a las mesas del mundo.&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;lg:col-span-2 space-y-6&quot; data-v-ddef8730&gt;&lt;div class=&quot;space-y-4&quot; data-v-ddef8730&gt;&lt;div class=&quot;relative group&quot; data-v-ddef8730&gt;&lt;img src=&quot;&#39;+Fl+&#39;&quot; alt=&quot;Proceso artesanal de elaboración&quot; class=&quot;w-full h-64 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-[1.02]&quot; data-v-ddef8730&gt;&lt;div class=&quot;absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl&quot; data-v-ddef8730&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;bg-white border border-gray-200 p-6 rounded-xl shadow-sm&quot; data-v-ddef8730&gt;&lt;blockquote class=&quot;text-gray-700 italic text-sm leading-relaxed font-serif&quot; data-v-ddef8730&gt; &amp;quot;Creemos que los buenos momentos se comparten alrededor de una mesa, y nuestros productos están diseñados para enriquecer esos momentos especiales con sabores auténticos y naturales.&amp;quot; &lt;/blockquote&gt;&lt;div class=&quot;mt-3 pt-3 border-t border-gray-100&quot; data-v-ddef8730&gt;&lt;p class=&quot;text-xs font-semibold text-green-700&quot; data-v-ddef8730&gt;— Familia Raymi&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative group&quot; data-v-ddef8730&gt;&lt;img src=&quot;&#39;+Ll+&#39;&quot; alt=&quot;Ingredientes naturales seleccionados&quot; class=&quot;w-full h-64 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-[1.02]&quot; data-v-ddef8730&gt;&lt;div class=&quot;absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl&quot; data-v-ddef8730&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;,1)])))}}),Hl=et(Dl,[[&quot;__scopeId&quot;,&quot;data-v-ddef8730&quot;]]),Bl=&quot;&quot;+new URL(&quot;untando-crema-verde-2-BzXWsKLM.jpg&quot;,import.meta.url).href,Nl={class:&quot;w-full bg-white py-16 md:py-20&quot;},Ul=Ze({__name:&quot;BenefitsSection&quot;,setup(e){return(t,s)=&gt;(Se(),Oe(&quot;section&quot;,Nl,s[0]||(s[0]=[ct(&#39;&lt;div class=&quot;max-w-7xl mx-auto px-8&quot; data-v-2700aaf6&gt;&lt;div class=&quot;text-center mb-16&quot; data-v-2700aaf6&gt;&lt;div class=&quot;inline-block&quot; data-v-2700aaf6&gt;&lt;h2 class=&quot;text-4xl lg:text-5xl font-bold text-gray-900 font-serif leading-tight mb-4&quot; data-v-2700aaf6&gt; Ventajas de la crema de aceituna &lt;/h2&gt;&lt;div class=&quot;w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto mb-6&quot; data-v-2700aaf6&gt;&lt;/div&gt;&lt;/div&gt;&lt;p class=&quot;text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed&quot; data-v-2700aaf6&gt; Descubre por qué nuestras cremas de aceituna son la elección perfecta para enriquecer tu mesa y cuidar tu bienestar. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;grid lg:grid-cols-2 gap-12 lg:gap-16&quot; data-v-2700aaf6&gt;&lt;div class=&quot;space-y-8&quot; data-v-2700aaf6&gt;&lt;div class=&quot;relative group mb-8&quot; data-v-2700aaf6&gt;&lt;img src=&quot;&#39;+Bl+&#39;&quot; alt=&quot;Crema de aceituna verde fresca y natural&quot; class=&quot;w-full h-80 object-cover object-center rounded-2xl shadow-xl transition-transform duration-300 group-hover:scale-105&quot; data-v-2700aaf6&gt;&lt;/div&gt;&lt;div class=&quot;flex items-center space-x-4 mb-6&quot; data-v-2700aaf6&gt;&lt;h3 class=&quot;text-2xl lg:text-3xl font-bold text-gray-900 font-serif&quot; data-v-2700aaf6&gt; Sabor y salud en un solo bocado &lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;space-y-4&quot; data-v-2700aaf6&gt;&lt;ul class=&quot;space-y-3&quot; data-v-2700aaf6&gt;&lt;li class=&quot;flex items-start&quot; data-v-2700aaf6&gt;&lt;span class=&quot;text-green-600 mr-3 mt-1&quot; data-v-2700aaf6&gt;•&lt;/span&gt;&lt;div data-v-2700aaf6&gt;&lt;h4 class=&quot;text-lg font-semibold text-gray-900 mb-1&quot; data-v-2700aaf6&gt;Versatilidad gastronómica&lt;/h4&gt;&lt;p class=&quot;text-gray-600 leading-relaxed&quot; data-v-2700aaf6&gt; Perfecta para una amplia gama de platos, desde aperitivos hasta platos principales, adaptándose a cualquier ocasión culinaria. &lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-2700aaf6&gt;&lt;span class=&quot;text-green-600 mr-3 mt-1&quot; data-v-2700aaf6&gt;•&lt;/span&gt;&lt;div data-v-2700aaf6&gt;&lt;h4 class=&quot;text-lg font-semibold text-gray-900 mb-1&quot; data-v-2700aaf6&gt;Rica en antioxidantes&lt;/h4&gt;&lt;p class=&quot;text-gray-600 leading-relaxed&quot; data-v-2700aaf6&gt; Las aceitunas son naturalmente ricas en antioxidantes que ayudan a proteger tu organismo contra el estrés oxidativo. &lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-2700aaf6&gt;&lt;span class=&quot;text-green-600 mr-3 mt-1&quot; data-v-2700aaf6&gt;•&lt;/span&gt;&lt;div data-v-2700aaf6&gt;&lt;h4 class=&quot;text-lg font-semibold text-gray-900 mb-1&quot; data-v-2700aaf6&gt;Mejora el perfil lipídico&lt;/h4&gt;&lt;p class=&quot;text-gray-600 leading-relaxed&quot; data-v-2700aaf6&gt; Contiene ácidos grasos saludables que contribuyen a mejorar tu perfil lipídico y bienestar cardiovascular. &lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;space-y-8&quot; data-v-2700aaf6&gt;&lt;div class=&quot;relative group mb-8&quot; data-v-2700aaf6&gt;&lt;img src=&quot;&#39;+Dn+&#39;&quot; alt=&quot;Crema de aceituna morada artesanal&quot; class=&quot;w-full h-80 object-cover object-center rounded-2xl shadow-xl transition-transform duration-300 group-hover:scale-105&quot; data-v-2700aaf6&gt;&lt;/div&gt;&lt;div class=&quot;flex items-center space-x-4 mb-6&quot; data-v-2700aaf6&gt;&lt;h3 class=&quot;text-2xl lg:text-3xl font-bold text-gray-900 font-serif&quot; data-v-2700aaf6&gt; Maridaje perfecto &lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;space-y-4&quot; data-v-2700aaf6&gt;&lt;ul class=&quot;space-y-3&quot; data-v-2700aaf6&gt;&lt;li class=&quot;flex items-start&quot; data-v-2700aaf6&gt;&lt;span class=&quot;text-purple-600 mr-3 mt-1&quot; data-v-2700aaf6&gt;•&lt;/span&gt;&lt;div data-v-2700aaf6&gt;&lt;h4 class=&quot;text-lg font-semibold text-gray-900 mb-1&quot; data-v-2700aaf6&gt;Vino + aceituna = armonía&lt;/h4&gt;&lt;p class=&quot;text-gray-600 leading-relaxed&quot; data-v-2700aaf6&gt; La combinación clásica que realza los sabores de ambos elementos, creando una experiencia gastronómica equilibrada y sofisticada. &lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-2700aaf6&gt;&lt;span class=&quot;text-purple-600 mr-3 mt-1&quot; data-v-2700aaf6&gt;•&lt;/span&gt;&lt;div data-v-2700aaf6&gt;&lt;h4 class=&quot;text-lg font-semibold text-gray-900 mb-1&quot; data-v-2700aaf6&gt;Cerveza + aceituna = frescura&lt;/h4&gt;&lt;p class=&quot;text-gray-600 leading-relaxed&quot; data-v-2700aaf6&gt; Una combinación refrescante que aporta un contraste delicioso, ideal para momentos relajados y reuniones casuales. &lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class=&quot;flex items-start&quot; data-v-2700aaf6&gt;&lt;span class=&quot;text-purple-600 mr-3 mt-1&quot; data-v-2700aaf6&gt;•&lt;/span&gt;&lt;div data-v-2700aaf6&gt;&lt;h4 class=&quot;text-lg font-semibold text-gray-900 mb-1&quot; data-v-2700aaf6&gt;Perfecto para compartir momentos&lt;/h4&gt;&lt;p class=&quot;text-gray-600 leading-relaxed&quot; data-v-2700aaf6&gt; Crea el ambiente ideal para reuniones, celebraciones y momentos especiales con familia y amigos. &lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;,1)])))}}),ql=et(Ul,[[&quot;__scopeId&quot;,&quot;data-v-2700aaf6&quot;]]),Vl=&quot;&quot;+new URL(&quot;logo-yape-BKZfWogs.png&quot;,import.meta.url).href,Kl=&quot;&quot;+new URL(&quot;transferencia-CZUyKgyw.webp&quot;,import.meta.url).href,Wl=&quot;&quot;+new URL(&quot;logo-plin-C0HyKQ0m.png&quot;,import.meta.url).href,zl=&quot;&quot;+new URL(&quot;dos-cremas-juntas-DUg2Q_oo.jpg&quot;,import.meta.url).href,kl={id:&quot;contactanos&quot;,class:&quot;w-full bg-white py-8 md:py-14&quot;},Yl=Ze({__name:&quot;OrderSection&quot;,setup(e){return(t,s)=&gt;(Se(),Oe(&quot;section&quot;,kl,s[0]||(s[0]=[ct(&#39;&lt;div class=&quot;max-w-7xl mx-auto px-8&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;mb-20&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;text-center mb-12&quot; data-v-cfc4c26f&gt;&lt;h2 class=&quot;text-3xl lg:text-4xl font-bold text-gray-900 font-serif leading-tight mb-4&quot; data-v-cfc4c26f&gt; Métodos de Pago &lt;/h2&gt;&lt;div class=&quot;w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto mb-6&quot; data-v-cfc4c26f&gt;&lt;/div&gt;&lt;p class=&quot;text-lg text-gray-600 max-w-2xl mx-auto font-serif&quot; data-v-cfc4c26f&gt; Contamos con los siguientes métodos de pago para tu comodidad &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;grid md:grid-cols-3 gap-6 max-w-4xl mx-auto&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300 group&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;flex items-center space-x-4&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;w-12 h-12 flex items-center justify-center flex-shrink-0&quot; data-v-cfc4c26f&gt;&lt;img src=&quot;&#39;+Vl+&#39;&quot; alt=&quot;Yape logo&quot; class=&quot;w-10 h-10 object-contain&quot; data-v-cfc4c26f&gt;&lt;/div&gt;&lt;div class=&quot;flex-1&quot; data-v-cfc4c26f&gt;&lt;h3 class=&quot;text-lg font-semibold text-gray-900 mb-1 font-serif&quot; data-v-cfc4c26f&gt;Yape&lt;/h3&gt;&lt;p class=&quot;text-gray-600 text-sm font-serif&quot; data-v-cfc4c26f&gt;Pago desde tu celular&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300 group&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;flex items-center space-x-4&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;w-12 h-12 flex items-center justify-center flex-shrink-0&quot; data-v-cfc4c26f&gt;&lt;img src=&quot;&#39;+Kl+&#39;&quot; alt=&quot;Transferencia bancaria&quot; class=&quot;w-10 h-10 object-contain&quot; data-v-cfc4c26f&gt;&lt;/div&gt;&lt;div class=&quot;flex-1&quot; data-v-cfc4c26f&gt;&lt;h3 class=&quot;text-lg font-semibold text-gray-900 mb-1 font-serif&quot; data-v-cfc4c26f&gt;Transferencias&lt;/h3&gt;&lt;p class=&quot;text-gray-600 text-sm font-serif&quot; data-v-cfc4c26f&gt;Transferencia bancaria&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300 group&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;flex items-center space-x-4&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;w-12 h-12 flex items-center justify-center flex-shrink-0&quot; data-v-cfc4c26f&gt;&lt;img src=&quot;&#39;+Wl+&#39;&quot; alt=&quot;Plin logo&quot; class=&quot;w-10 h-10 object-contain&quot; data-v-cfc4c26f&gt;&lt;/div&gt;&lt;div class=&quot;flex-1&quot; data-v-cfc4c26f&gt;&lt;h3 class=&quot;text-lg font-semibold text-gray-900 mb-1 font-serif&quot; data-v-cfc4c26f&gt;Plin&lt;/h3&gt;&lt;p class=&quot;text-gray-600 text-sm font-serif&quot; data-v-cfc4c26f&gt;Pago desde tu celular&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;mb-8&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;text-center mb-12&quot; data-v-cfc4c26f&gt;&lt;h2 class=&quot;text-3xl lg:text-4xl font-bold text-gray-900 font-serif leading-tight mb-4&quot; data-v-cfc4c26f&gt; ¿Cómo Comprar? &lt;/h2&gt;&lt;div class=&quot;w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto mb-6&quot; data-v-cfc4c26f&gt;&lt;/div&gt;&lt;p class=&quot;text-lg text-gray-600 max-w-2xl mx-auto font-serif&quot; data-v-cfc4c26f&gt; Haz de tu próxima reunión un momento increíble y gourmet &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;grid lg:grid-cols-2 gap-16 items-center&quot; data-v-cfc4c26f&gt;&lt;div class=&quot;space-y-8&quot; data-v-cfc4c26f&gt;&lt;h2 class=&quot;text-2xl lg:text-4xl font-bold text-gray-900 font-serif leading-tight&quot; data-v-cfc4c26f&gt; ¡Pide Aquí! &lt;/h2&gt;&lt;p class=&quot;text-lg text-gray-600 leading-relaxed font-serif&quot; data-v-cfc4c26f&gt; Para cualquier consulta, comunícate con nosotros por WhatsApp. Te brindaremos información sobre productos, precios y métodos de entrega. &lt;/p&gt;&lt;div class=&quot;space-y-4 flex flex-col items-center&quot; data-v-cfc4c26f&gt;&lt;a href=&quot;https://wa.me/51997305859?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20las%20cremas%20Raymi&quot; target=&quot;_blank&quot; class=&quot;bg-gradient-to-r from-[#6B8E23] to-[#5a7a1e] text-white font-bold py-4 px-8 rounded-xl flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group max-w-sm font-serif&quot; data-v-cfc4c26f&gt;&lt;svg class=&quot;w-6 h-6 group-hover:scale-110 transition-transform&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot; data-v-cfc4c26f&gt;&lt;path d=&quot;M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488&quot; data-v-cfc4c26f&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span data-v-cfc4c26f&gt;997 305 859&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://wa.me/51924973176?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20las%20cremas%20Raymi&quot; target=&quot;_blank&quot; class=&quot;bg-gradient-to-r from-[#6B8E23] to-[#5a7a1e] text-white font-bold py-4 px-8 rounded-xl flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group max-w-sm font-serif&quot; data-v-cfc4c26f&gt;&lt;svg class=&quot;w-6 h-6 group-hover:scale-110 transition-transform&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot; data-v-cfc4c26f&gt;&lt;path d=&quot;M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488&quot; data-v-cfc4c26f&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span data-v-cfc4c26f&gt;924 973 176&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;bg-gray-50 rounded-xl p-6 border border-gray-200&quot; data-v-cfc4c26f&gt;&lt;p class=&quot;text-gray-700 leading-relaxed text-sm font-serif&quot; data-v-cfc4c26f&gt;&lt;span class=&quot;font-semibold text-gray-900&quot; data-v-cfc4c26f&gt;¡Es muy fácil!&lt;/span&gt; Solo escríbenos por WhatsApp y te ayudaremos con tu pedido. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot; data-v-cfc4c26f&gt;&lt;img src=&quot;&#39;+zl+&#39;&quot; alt=&quot;Cremas de aceituna Raymi - Verde y Morada&quot; class=&quot;w-full h-96 object-cover rounded-xl shadow-xl&quot; data-v-cfc4c26f&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;,1)])))}}),Gl=et(Yl,[[&quot;__scopeId&quot;,&quot;data-v-cfc4c26f&quot;]]),Jl={class:&quot;w-full bg-gray-900 text-white py-12&quot;},Xl={class:&quot;max-w-7xl mx-auto px-8&quot;},Ql={class:&quot;border-t border-gray-700 pt-8&quot;},Zl={class:&quot;flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0&quot;},eo={class:&quot;text-center md:text-left&quot;},to={class:&quot;text-gray-400 font-serif&quot;},so=Ze({__name:&quot;Footer&quot;,setup(e){const t=Fn(()=&gt;new Date().getFullYear());return(s,r)=&gt;(Se(),Oe(&quot;footer&quot;,Jl,[O(&quot;div&quot;,Xl,[r[1]||(r[1]=ct(&#39;&lt;div class=&quot;grid md:grid-cols-2 gap-8 mb-8&quot; data-v-e52c1cfb&gt;&lt;div class=&quot;space-y-4&quot; data-v-e52c1cfb&gt;&lt;h3 class=&quot;text-2xl font-bold font-serif text-green-600&quot; data-v-e52c1cfb&gt;Raymi&lt;/h3&gt;&lt;p class=&quot;text-gray-300 leading-relaxed font-serif&quot; data-v-e52c1cfb&gt; Cremas de aceituna artesanales que transforman cada comida en una experiencia gourmet única. &lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;space-y-4 flex flex-col md:items-end&quot; data-v-e52c1cfb&gt;&lt;div class=&quot;space-y-3&quot; data-v-e52c1cfb&gt;&lt;h4 class=&quot;text-lg font-semibold text-white text-left font-serif&quot; data-v-e52c1cfb&gt;Contacto&lt;/h4&gt;&lt;div class=&quot;space-y-3 text-gray-300 font-serif&quot; data-v-e52c1cfb&gt;&lt;div class=&quot;flex items-center space-x-3&quot; data-v-e52c1cfb&gt;&lt;svg class=&quot;w-4 h-4 text-green-600 flex-shrink-0&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot; data-v-e52c1cfb&gt;&lt;path d=&quot;M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z&quot; data-v-e52c1cfb&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span data-v-e52c1cfb&gt;WhatsApp: +51 943 747 351&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;flex items-center space-x-3&quot; data-v-e52c1cfb&gt;&lt;svg class=&quot;w-4 h-4 text-green-600 flex-shrink-0&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot; data-v-e52c1cfb&gt;&lt;path d=&quot;M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z&quot; data-v-e52c1cfb&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span data-v-e52c1cfb&gt;WhatsApp: +51 951 582 327&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;flex items-center space-x-3&quot; data-v-e52c1cfb&gt;&lt;svg class=&quot;w-4 h-4 text-green-600 flex-shrink-0&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot; data-v-e52c1cfb&gt;&lt;path d=&quot;M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z&quot; data-v-e52c1cfb&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span data-v-e52c1cfb&gt;Lima, Perú&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#39;,1)),O(&quot;div&quot;,Ql,[O(&quot;div&quot;,Zl,[O(&quot;div&quot;,eo,[O(&quot;p&quot;,to,&quot; © &quot;+Dr(t.value)+&quot; Raymi. Todos los derechos reservados. &quot;,1)]),r[0]||(r[0]=O(&quot;div&quot;,{class:&quot;text-center md:text-right&quot;},[O(&quot;p&quot;,{class:&quot;text-gray-400 font-serif&quot;},[In(&quot; Hecho por &quot;),O(&quot;a&quot;,{href:&quot;https://mathiaskunimoto.com/&quot;,target:&quot;_blank&quot;,class:&quot;text-green-600 font-semibold hover:text-green-500 transition-colors font-serif&quot;},&quot;Mathias Kunimoto&quot;)])],-1))])])])]))}}),ro=et(so,[[&quot;__scopeId&quot;,&quot;data-v-e52c1cfb&quot;]]),no=Ze({__name:&quot;App&quot;,setup(e){return(t,s)=&gt;(Se(),Oe(&quot;main&quot;,null,[Q(Ol),Q(Hl),s[0]||(s[0]=O(&quot;div&quot;,{class:&quot;flex justify-center py-8&quot;,role:&quot;separator&quot;,&quot;aria-label&quot;:&quot;Separador de sección&quot;},[O(&quot;div&quot;,{class:&quot;w-96 h-1 bg-gradient-to-r from-transparent via-gray-500 to-transparent&quot;})],-1)),Q(jl),s[1]||(s[1]=O(&quot;div&quot;,{class:&quot;flex justify-center py-8&quot;,role:&quot;separator&quot;,&quot;aria-label&quot;:&quot;Separador de sección&quot;},[O(&quot;div&quot;,{class:&quot;w-96 h-1 bg-gradient-to-r from-transparent via-gray-500 to-transparent&quot;})],-1)),Q(ql),s[2]||(s[2]=O(&quot;div&quot;,{class:&quot;flex justify-center py-8&quot;,role:&quot;separator&quot;,&quot;aria-label&quot;:&quot;Separador de sección&quot;},[O(&quot;div&quot;,{class:&quot;w-96 h-1 bg-gradient-to-r from-transparent via-gray-500 to-transparent&quot;})],-1)),Q(Gl),Q(ro)]))}}),ao=et(no,[[&quot;__scopeId&quot;,&quot;data-v-81ec222f&quot;]]);il(ao).mount(&quot;#app&quot;);
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>from</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://raymifest.com/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/525.html">CWE-525</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET https://raymifest.com/sitemap.xml HTTP/1.1
+host: raymifest.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (567 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+content-type: application/xml
+last-modified: Sat, 16 Aug 2025 04:04:21 GMT
+accept-ranges: bytes
+content-length: 896
+date: Sat, 25 Oct 2025 10:07:07 GMT
+vary: User-Agent
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+alt-svc: h3=&quot;:443&quot;; ma=2592000, h3-29=&quot;:443&quot;; ma=2592000, h3-Q050=&quot;:443&quot;; ma=2592000, h3-Q046=&quot;:443&quot;; ma=2592000, h3-Q043=&quot;:443&quot;; ma=2592000, quic=&quot;:443&quot;; ma=2592000; v=&quot;43,46&quot;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (896 bytes)</summary>
+				
+				<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://raymi.pe/&lt;/loc&gt;
+    &lt;lastmod&gt;2025-08-15&lt;/lastmod&gt;
+    &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+    &lt;priority&gt;1.0&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://raymi.pe/#productos&lt;/loc&gt;
+    &lt;lastmod&gt;2025-08-15&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.8&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://raymi.pe/#nosotros&lt;/loc&gt;
+    &lt;lastmod&gt;2025-08-15&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.7&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://raymi.pe/#beneficios&lt;/loc&gt;
+    &lt;lastmod&gt;2025-08-15&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.6&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://raymi.pe/#pedidos&lt;/loc&gt;
+    &lt;lastmod&gt;2025-08-15&lt;/lastmod&gt;
+    &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+    &lt;priority&gt;0.9&lt;/priority&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>cache-control</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/615.html">615</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

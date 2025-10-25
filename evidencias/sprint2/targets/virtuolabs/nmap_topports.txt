@@ -1,0 +1,15 @@
+# Nmap 7.95 scan initiated Sat Oct 25 02:22:09 2025 as: /usr/lib/nmap/nmap -Pn -sS -p 80,443,22,21,25,53,3306 -T2 -oN /root/evidencias/sprint2/targets/virtuolabs/nmap_topports.txt virtuolabs.dev
+Nmap scan report for virtuolabs.dev (91.98.70.94)
+Host is up (0.19s latency).
+rDNS record for 91.98.70.94: static.94.70.98.91.clients.your-server.de
+
+PORT     STATE    SERVICE
+21/tcp   closed   ftp
+22/tcp   open     ssh
+25/tcp   filtered smtp
+53/tcp   closed   domain
+80/tcp   open     http
+443/tcp  open     https
+3306/tcp open     mysql
+
+# Nmap done at Sat Oct 25 02:22:18 2025 -- 1 IP address (1 host up) scanned in 8.75 seconds
