@@ -1,4 +1,4 @@
-# Sprint 2 – Evaluación de Seguridad Web (Laboratorio)
+# Sprint 2 – Evaluación de Seguridad Web 
 
 **Autor:** Bruce Andres Cipriano Chumbes  
 **Curso:** Anti-Hacking y Nuevas Tendencias de Seguridad – UPC  
@@ -14,7 +14,7 @@
 
 ## Índice
 
-- [Sprint 2 – Evaluación de Seguridad Web (Laboratorio)](#sprint-2--evaluación-de-seguridad-web-laboratorio)
+- [Sprint 2 – Evaluación de Seguridad Web](#sprint-2--evaluación-de-seguridad-web)
   - [Índice](#índice)
   - [0) Preparar entorno](#0-preparar-entorno)
   - [](#)
