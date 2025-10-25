@@ -21,19 +21,22 @@
   - [1) Evidencia inicial](#1-evidencia-inicial)
   - [](#-1)
   - [2) Estructura de targets](#2-estructura-de-targets)
+  - [](#-2)
   - [3) Reconocimiento Pasivo (OSINT)](#3-reconocimiento-pasivo-osint)
+  - [](#-3)
   - [4) Escaneo de red (Nmap) — perfil conservador](#4-escaneo-de-red-nmap--perfil-conservador)
+  - [](#-4)
   - [5) Enumeración Web (WhatWeb / Gobuster / Nikto)](#5-enumeración-web-whatweb--gobuster--nikto)
+  - [](#-5)
   - [6) DAST Ligero — OWASP ZAP (baseline / passive)](#6-dast-ligero--owasp-zap-baseline--passive)
     - [Opción GUI (pasos)](#opción-gui-pasos)
   - [7) Mapeo automatizado — Nessus (opcional, si tienes licencia)](#7-mapeo-automatizado--nessus-opcional-si-tienes-licencia)
+  - [](#-6)
   - [8) Consolidación de Hallazgos — `3.2.3_results.csv`](#8-consolidación-de-hallazgos--323_resultscsv)
     - [Guía rápida para llenar filas](#guía-rápida-para-llenar-filas)
   - [9) Capturas y organización final de evidencias](#9-capturas-y-organización-final-de-evidencias)
   - [10) Empaquetado final](#10-empaquetado-final)
   - [11) Subir documentación al repositorio (GitHub)](#11-subir-documentación-al-repositorio-github)
-  - [12) Notas finales y precauciones (sin vueltas)](#12-notas-finales-y-precauciones-sin-vueltas)
-
 ---
 
 ## 0) Preparar entorno
@@ -88,6 +91,8 @@ Mapeo (nombre → URL):
 * `raymi` → `https://raymifest.com`
 * `virtuolabs` → `https://www.virtuolabs.dev`
 
+
+![Captura 3 — Entorno de trabajo](./evidencias/Screenshot/captura3.png)
 ---
 
 ## 3) Reconocimiento Pasivo (OSINT)
@@ -116,7 +121,7 @@ CSV
 ```
 
 Registra manualmente entradas útiles en `osint_table.csv`.
-
+![Captura 4 — Entorno de trabajo](./evidencias/Screenshot/captura4.png)
 ---
 
 ## 4) Escaneo de red (Nmap) — perfil conservador
@@ -137,7 +142,7 @@ sudo nmap -Pn -sV -sC -p 80,443 -T2 -oN "$OUTDIR/nmap_sV_scripts.txt" "$TARGET_U
 ```
 
 Archivos de salida: `nmap_topports.txt`, `nmap_sV_scripts.txt`, (opcional) `nmap_full_tcp_lab.txt`.
-
+![Captura 5 — Entorno de trabajo](./evidencias/Screenshot/captura5.png)
 ---
 
 ## 5) Enumeración Web (WhatWeb / Gobuster / Nikto)
@@ -158,6 +163,7 @@ Repetir para `puntodepartidauc`, `raymifest`, `virtuolabs` (ajustar `TARGET` y `
 
 Evidencias: `whatweb.txt`, `gobuster.txt`, `nikto.txt` en cada carpeta target.
 
+![Captura 6 — Entorno de trabajo](./evidencias/Screenshot/captura6.png)
 ---
 
 ## 6) DAST Ligero — OWASP ZAP (baseline / passive)
@@ -174,6 +180,13 @@ Modo: **Passive Scan only** (no intrusión). Uso de ZAP GUI o headless.
    ~/evidencias/sprint2/targets/<target>/ZAP_report.html
    ```
 
+![Captura 7 — Entorno de trabajo](./evidencias/Screenshot/captura7.png)
+
+![Captura 8 — Entorno de trabajo](./evidencias/Screenshot/captura8.png)
+
+![Captura 9 — Entorno de trabajo](./evidencias/Screenshot/captura9.png)
+
+![Captura 10 — Entorno de trabajo](./evidencias/Screenshot/captura10.png)
 
 ## 7) Mapeo automatizado — Nessus (opcional, si tienes licencia)
 
@@ -199,6 +212,9 @@ Pasos (UI):
 
 Si no puedes exportar PDF, exporta XML/CSV y toma capturas.
 
+![Captura 11 — Entorno de trabajo](./evidencias/Screenshot/captura11.png)
+
+![Captura 12 — Entorno de trabajo](./evidencias/Screenshot/captura12.png)
 ---
 
 ## 8) Consolidación de Hallazgos — `3.2.3_results.csv`
@@ -280,15 +296,5 @@ git commit -m "Sprint 2 - Documentación de pruebas y evidencias (Bruce Cipriano
 git push origin main
 ```
 
-Si tu branch remoto es diferente (por política del curso), usa la rama correspondiente.
-
----
-
-## 12) Notas finales y precauciones (sin vueltas)
-
-* Ejecutar cualquier escaneo agresivo **solo con autorización escrita** (ROE) y fuera de horarios pico.
-* No realices DoS, no borres datos, no instales persistencia ni backdoors.
-* Los reportes automatizados (Nessus, ZAP) pueden contener falsos positivos; validar manualmente antes de reportar como crítico.
-* CVSS estimado en la tabla es aproximado — hacer evaluación de riesgo con el equipo si es necesario.
 
 ---
