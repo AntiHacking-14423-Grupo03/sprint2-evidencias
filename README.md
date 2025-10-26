@@ -101,7 +101,20 @@ theHarvester -d puntodepartidauc.com -b google -l 200 > ~/evidencias/sprint2/tar
 theHarvester -d puntodepartidauc.com -b urlscan -l 200 > ~/evidencias/sprint2/targets/puntodepartidauc/theharvester_urlscan.txt 2>&1
 # (repetido para triphasikperformance.com, raymifest.com, virtuolabs.dev)
 ```
+Extraer correos y dominios (ejemplo):
 
+```bash
+grep -E -o "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}" ~/evidencias/sprint2/targets/*/theharvester_*.txt | sort -u > ~/evidencias/sprint2/found_emails.txt
+grep -Eo "([a-z0-9\-]+\.)+[a-z]{2,}" ~/evidencias/sprint2/targets/*/theharvester_*.txt | sort -u > ~/evidencias/sprint2/found_domains.txt
+```
+
+Plantilla CSV OSINT:
+
+```bash
+cat > ~/evidencias/sprint2/osint_table.csv <<'CSV'
+dominio,subdominio,email,endpoint_api,pdf_file,pdf_author,pdf_version,source,timestamp,evidence_file
+CSV
+```
 Se registraron resultados consolidados en `osint_table.csv`.
 
 ![Captura 4 — Entorno de trabajo](./evidencias/Screenshot/captura4.png)
