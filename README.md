@@ -162,11 +162,21 @@ Evidencias guardadas:
 
 ## 5) Enumeración Web (WhatWeb / Gobuster / Nikto)
 
+Ejemplo (triphasik):
+
 ```bash
-whatweb -v -a 3 <target> > whatweb.txt
-gobuster dir -u <target> -w common.txt -o gobuster.txt
-nikto -h <target> -output nikto.txt
+TARGET=https://app.triphasikperformance.com
+OUTDIR=~/evidencias/sprint2/targets/triphasik
+mkdir -p "$OUTDIR"
+
+whatweb -v -a 3 "$TARGET" > "$OUTDIR/whatweb.txt" 2>&1
+gobuster dir -u "$TARGET" -w /usr/share/wordlists/dirb/common.txt -s "200,204,301,302,307,401,403" -o "$OUTDIR/gobuster.txt" -k
+nikto -h "$TARGET" -output "$OUTDIR/nikto.txt"
 ```
+
+Repetir para `puntodepartidauc`, `raymifest`, `virtuolabs` (ajustar `TARGET` y `OUTDIR`).
+
+Evidencias: `whatweb.txt`, `gobuster.txt`, `nikto.txt` en cada carpeta target.
 
 Evidencias generadas:
 
